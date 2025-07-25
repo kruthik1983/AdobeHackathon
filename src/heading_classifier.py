@@ -1,204 +1,221 @@
-# src/heading_classifier.py
-from collections import Counter, defaultdict
 import numpy as np
+import re
+from collections import Counter, defaultdict
+import fitz # Import fitz to recognize fitz.Rect objects
+
+def is_noise(text: str) -> bool:
+    """
+    Filters out common noise patterns for lines that are likely body text,
+    even if they have some formatting. This is crucial for avoiding
+    misclassification of paragraphs/list items as headings.
+    """
+    text_lower = text.lower().strip()
+
+    # Rule 1: Lines that end with a full stop are almost always not headings.
+    # This is a very strong signal for body text.
+    if text.endswith('.'):
+        return True
+
+    # Rule 2: Lines that are too long (more than a typical heading length) are likely paragraphs.
+    if len(text.split()) > 10: # Increased strictness for length
+        return True
+    
+    # Rule 3: Very short, non-alphabetic lines (separators, etc.)
+    if len(text) > 0 and sum(c.isalpha() for c in text) / (len(text) + 1e-6) < 0.2:
+        return True
+    
+    # Rule 4: Common page artifacts (e.g., page numbers, generic headers/footers)
+    if re.match(r"^\s*(page|fig\.|table)\s+\d+\s*$", text_lower): # More specific to avoid filtering valid short headings
+        return True
+    
+    # Rule 5: Generic placeholder text
+    if "lorem ipsum" in text_lower:
+        return True
+        
+    return False
 
 def classify_headings(feature_lines):
     """
     Classifies text lines into Title, H1, H2, H3 based on robust feature analysis and adaptive clustering.
-
     This function implements a more sophisticated heuristic-based approach:
     1. Identifies approximate body text font size using statistical methods (mode/median).
     2. Filters for potential heading candidates based on size, boldness, and structural cues.
     3. Identifies the document title with a weighted heuristic (size, position, uniqueness).
-    4. Groups remaining heading candidates by their visual style (font size, boldness, indentation).
+    4. Groups remaining heading candidates by their visual style (font size, boldness, indentation, color).
     5. Dynamically assigns H1, H2, H3 levels by sorting these styles by prominence
-       (size, then boldness, then indentation) and mapping them adaptively.
+       (size, then boldness, then indentation, then color) and mapping them adaptively.
     6. Ensures logical hierarchy (e.g., H2 cannot be larger than H1).
-    7. Sorts the final list of headings by their appearance in the document.
-
+    7. Applies noise filtering to remove non-heading content.
+    8. Sorts the final list of headings by their appearance in the document.
     Args:
         feature_lines: A list of feature vectors from feature_extractor.
-
     Returns:
         A tuple containing the document title (str) and the outline (a list of heading dicts).
     """
     if not feature_lines:
-        return "Untitled", []
+        return "Untitled Document", []
 
     # --- 1. Identify Body Text Style Robustly ---
-    # Collect all font sizes for body text estimation
-    all_font_sizes = [round(line["font_size"], 1) for line in feature_lines]
+    # Collect font sizes from lines likely to be body text (e.g., not extremely large, not single words)
+    # Using `round(..., 1)` to group similar font sizes.
+    potential_body_sizes = [
+        round(line["font_size"], 1) for line in feature_lines
+        if line["font_size"] > 5 and line["font_size"] < 25 and line["word_count"] > 4 # Filter out very small/large and short lines
+    ]
     
-    if not all_font_sizes:
-        return "Untitled", []
+    body_font_size = 10.0 # Default fallback
+    if potential_body_sizes:
+        # Use the mode for body font size, as it's robust to outliers
+        body_font_size_counts = Counter(potential_body_sizes)
+        body_font_size = body_font_size_counts.most_common(1)[0][0]
 
-    # Use the mode for body font size, as it's less sensitive to outliers than mean
-    # Filter out very small or very large sizes that are unlikely to be body text
-    filtered_font_sizes = [s for s in all_font_sizes if s > 5 and s < 30] # Common range for body text
-    if not filtered_font_sizes:
-        # Fallback if filtering is too aggressive
-        filtered_font_sizes = all_font_sizes 
+    # --- 2. Identify Title Candidate (Adaptive Page Title Detection WOW Factor) ---
+    # Prioritize: Highest Y-position on page 1, then largest font size, then bold/centered.
+    title_candidate = {"font_size": 0.0, "text": "Untitled Document", "page_number": 0, "y0": float('inf'), "is_bold": False, "is_centered": False, "font_color": 0}
+    
+    first_page_lines = [line for line in feature_lines if line["page_number"] == 1]
+    
+    for line in first_page_lines:
+        # Skip very short lines or lines that are clearly not titles
+        if line["word_count"] < 2 or len(line["text"].strip()) < 5:
+            continue
 
-    # Find the most frequent font size. If ties, Counter.most_common picks one arbitrarily.
-    body_font_size_counts = Counter(filtered_font_sizes)
-    body_font_size = body_font_size_counts.most_common(1)[0][0] if body_font_size_counts else 10 # Default fallback
+        # A line is a strong title candidate if:
+        # 1. It's higher on the page than the current best candidate.
+        # 2. Or, it's at a similar height, but has a larger font size.
+        # 3. Or, same height & size, but bolder/more centered.
+        # 4. NEW: Consider font color in tie-breaking.
 
-    # --- 2. Identify Title Candidate ---
-    title_candidate = {"font_size": 0, "text": "Untitled", "page_number": 0, "y0": -1}
-    for line in feature_lines:
-        # Prioritize larger text on the first page, especially if centered or at the top
-        if line["page_number"] == 1:
-            # Strong signal if significantly larger than body, near top, and/or centered
-            if line["font_size"] > title_candidate["font_size"] * 1.05 and \
-               (line["font_size"] > body_font_size * 1.5 or line["is_centered"] or line["y0"] < line["page_height"] * 0.2):
-                title_candidate = line
-            # If same font size, pick the higher one
-            elif line["font_size"] == title_candidate["font_size"] and line["y0"] < title_candidate["y0"]:
-                 title_candidate = line
+        is_stronger_candidate = False
+
+        if line["y0"] < title_candidate["y0"] - (body_font_size * 0.5): # Significantly higher
+            is_stronger_candidate = True
+        elif abs(line["y0"] - title_candidate["y0"]) < (body_font_size * 0.5): # Similar height
+            if line["font_size"] > title_candidate["font_size"] * 1.05: # Significantly larger font
+                is_stronger_candidate = True
+            elif line["font_size"] == title_candidate["font_size"]:
+                if line["is_bold"] and not title_candidate["is_bold"]: # Same size/height, but current is bold
+                    is_stronger_candidate = True
+                elif line["is_centered"] and not title_candidate["is_centered"]: # Same size/height/bold, but current is centered
+                    is_stronger_candidate = True
+                elif line["font_color"] != title_candidate["font_color"] and title_candidate["font_color"] == 0: # Prefer non-black color if current is black
+                    is_stronger_candidate = True
+
+        if is_stronger_candidate:
+            title_candidate = line.copy()
+            # If a line becomes the title candidate, it should definitely not be a heading candidate
+            title_candidate["_is_title"] = True
+        else:
+            line["_is_title"] = False # Mark others
 
     title_text = title_candidate["text"].replace('\n', ' ').strip()
     
-    # --- 3. Filter for Potential Headings ---
-    # A line is a heading candidate if:
-    # - Its font size is greater than the body font size (with a small margin to catch slight differences).
-    # - OR it's bold AND its font size is at least the body font size.
-    # - OR it starts with a recognized numbering/bullet pattern and is not excessively long.
-    # - It's not the identified title (to avoid duplication).
-    # - It's not excessively long (typically headings are concise).
+    # --- 3. Filter for Potential Headings (Visual Heuristics Ensemble WOW Factor) ---
     heading_candidates = []
     for line in feature_lines:
-        if line["text"] == title_text: # Skip if it's the title
+        cleaned_text = line["text"].replace('\n', ' ').strip()
+        if not cleaned_text or cleaned_text == title_text or line.get("_is_title", False):
             continue
         
-        is_larger_than_body = line["font_size"] > body_font_size * 1.05
-        is_bold_and_at_least_body_size = line["is_bold"] and line["font_size"] >= body_font_size * 0.95
-        is_patterned_heading = line["starts_with_pattern"] and line["word_count"] < 30 # Numbered lists are strong cues
+        # Apply noise filtering early and aggressively
+        if is_noise(cleaned_text):
+            continue
 
-        if (is_larger_than_body or is_bold_and_at_least_body_size or is_patterned_heading) and \
-           line["word_count"] < 250: # Avoid very long lines that might be body text
+        # Heuristic checks for actual heading characteristics
+        is_larger_than_body = line["font_size"] > body_font_size * 1.15
+        is_bold_and_prominent = line["is_bold"] and line["font_size"] >= body_font_size * 0.95
+        is_patterned_heading = line["starts_with_pattern"] and line["word_count"] < 30
+        has_significant_space_above = line["space_above"] > (body_font_size * 0.8)
+        is_distinct_color = (line["font_color"] != 0 and line["font_color"] != 16777215) # Not black and not white
+
+        # Combine heuristics: A line must meet a strong primary criterion AND not be noise.
+        # This makes the classification much stricter.
+        if (is_larger_than_body or is_bold_and_prominent or is_patterned_heading or has_significant_space_above or is_distinct_color):
+            line["_explanation"] = "Candidate based on font size, bold, pattern, spacing, or color."
             heading_candidates.append(line)
 
     # --- 4. Group Candidates by Visual Style and Assign Adaptive Levels ---
-    # Group by (rounded_font_size, is_bold, normalized_x0)
-    # Normalized x0 helps distinguish headings with different indentation levels (e.g., hanging indents vs true subheadings)
-    # Quantize x0 to clusters to account for slight variations
     x0_values = [h["x0"] for h in heading_candidates]
+    representative_x0s = []
     if x0_values:
-        # Simple clustering for x0: group values that are close together
-        x0_clusters = []
         x0_values.sort()
-        for x in x0_values:
-            found_cluster = False
-            for i, cluster in enumerate(x0_clusters):
-                if abs(x - cluster[0]) < 10: # Cluster if within 10 units (arbitrary threshold)
-                    x0_clusters[i].append(x)
-                    found_cluster = True
-                    break
-            if not found_cluster:
-                x0_clusters.append([x])
-        # Use the mean of each cluster as the representative x0
-        representative_x0s = sorted([np.mean(c) for c in x0_clusters])
-    else:
-        representative_x0s = []
-
-    def get_representative_x0(x):
+        if x0_values:
+            current_cluster_start = x0_values[0]
+            representative_x0s.append(current_cluster_start)
+            for x in x0_values:
+                if x - current_cluster_start > 15:
+                    current_cluster_start = x
+                    representative_x0s.append(current_cluster_start)
+    
+    def get_closest_representative_x0(x):
         if not representative_x0s: return x
-        # Find the closest representative x0
         return min(representative_x0s, key=lambda rx: abs(rx - x))
 
     heading_styles = defaultdict(list)
     for h in heading_candidates:
-        # Use rounded font size and a representative x0 for style key
-        style_key = (round(h["font_size"], 1), h["is_bold"], get_representative_x0(h["x0"]))
+        # Use rounded font size, boldness, and a representative x0 for style key
+        # Also include font_color for a more distinct style key
+        style_key = (round(h["font_size"], 1), h["is_bold"], get_closest_representative_x0(h["x0"]), h["font_color"])
         heading_styles[style_key].append(h)
 
-    # Sort styles to define hierarchy:
-    # Primary: font_size (descending)
-    # Secondary: is_bold (True first, then False)
-    # Tertiary: x0 (ascending - left-most is higher level)
     sorted_styles = sorted(
         heading_styles.keys(), 
-        key=lambda s: (s[0], s[1], -s[2]), # s[0]=font_size, s[1]=is_bold, s[2]=x0. Sort x0 descending for visual order
-        reverse=True # Largest font size first, then bold, then most left
+        key=lambda s: (s[0], s[1], s[2], s[3]), # s[0]=font_size, s[1]=is_bold, s[2]=x0, s[3]=font_color
+        reverse=True # Largest font size first, then bold, then most left, then distinct color
     )
 
     outline = []
-    assigned_levels = {} # To keep track of which style maps to which level (H1, H2, H3)
+    assigned_levels_map = {}
     
-    # Assign H1, H2, H3 dynamically based on distinct prominent styles
-    level_counter = 0
-    prev_font_size = float('inf')
-    prev_x0 = float('inf')
+    current_level_idx = 0
+    prev_style_key = None
 
     for style_key in sorted_styles:
-        current_font_size, current_is_bold, current_x0 = style_key
-        
-        # Heuristic for new level:
-        # 1. Significantly different (smaller) font size OR
-        # 2. Same font size but no longer bold AND previous was bold OR
-        # 3. Same font size, same bold, but significant indentation (x0 changed to the right)
-        
-        # Only assign up to H3
-        if level_counter < 3:
-            # Check for significant font size drop or boldness change for a new primary level
-            if current_font_size < prev_font_size * 0.90 or \
-               (current_font_size == prev_font_size and not current_is_bold and assigned_levels.get(prev_font_size, {}).get(prev_x0) is True) or \
-               (current_font_size == prev_font_size and current_is_bold == assigned_levels.get(prev_font_size, {}).get(prev_x0, False) and current_x0 > prev_x0 + 10): # Indentation change
-                level_counter += 1
-            
-            # Map the current style key to the determined level
-            if level_counter < 3: # Ensure we don't go beyond H3
-                assigned_levels[style_key] = f"H{level_counter + 1}"
+        current_font_size, current_is_bold, current_x0, current_font_color = style_key
+
+        if current_level_idx < 3:
+            if prev_style_key is None:
+                assigned_levels_map[style_key] = f"H{current_level_idx + 1}"
             else:
-                assigned_levels[style_key] = "H3" # Cap at H3
-        else:
-            assigned_levels[style_key] = "H3" # Any further distinct styles are also H3 for now
+                prev_font_size, prev_is_bold, prev_x0, prev_font_color = prev_style_key
+                
+                font_size_drop = (current_font_size < prev_font_size * 0.90)
+                boldness_change = (current_font_size == prev_font_size and prev_is_bold and not current_is_bold)
+                indentation_change = (current_font_size == prev_font_size and current_is_bold == prev_is_bold and current_x0 > prev_x0 + 10)
+                color_change = (current_font_size == prev_font_size and current_is_bold == prev_is_bold and current_x0 == prev_x0 and current_font_color != prev_font_color)
 
-        prev_font_size = current_font_size
-        prev_x0 = current_x0
-
-
-    # If no levels were assigned (e.g., all lines are body or only one heading type)
-    if not assigned_levels and heading_candidates:
-        assigned_levels[sorted_styles[0]] = "H1" # Default the most prominent to H1
-        if len(sorted_styles) > 1:
-            assigned_levels[sorted_styles[1]] = "H2"
-        if len(sorted_styles) > 2:
-            assigned_levels[sorted_styles[2]] = "H3"
-
-
-    # Build the final outline using assigned levels
-    for h in heading_candidates:
-        style_key = (round(h["font_size"], 1), h["is_bold"], get_representative_x0(h["x0"]))
-        level = assigned_levels.get(style_key)
-        
-        # Fallback if a candidate style didn't get assigned a level (shouldn't happen with logic above)
-        if level is None:
-            # This can happen if a document only has a few similar "heading-like" lines.
-            # Assign based on simple size comparison relative to the largest heading style found
-            if assigned_levels:
-                max_heading_font_size = sorted_styles[0][0]
-                if h["font_size"] >= max_heading_font_size * 0.95:
-                    level = "H1"
-                elif h["font_size"] >= body_font_size * 1.5:
-                    level = "H2"
+                if font_size_drop or boldness_change or indentation_change or color_change:
+                    current_level_idx += 1
+                    if current_level_idx < 3:
+                        assigned_levels_map[style_key] = f"H{current_level_idx + 1}"
+                    else:
+                        assigned_levels_map[style_key] = "H3"
                 else:
-                    level = "H3"
-            else:
-                level = "H1" # Default if no headings found
+                    assigned_levels_map[style_key] = assigned_levels_map[prev_style_key]
+        else:
+            assigned_levels_map[style_key] = "H3"
 
+        prev_style_key = style_key
+        
+    for h in heading_candidates:
+        style_key = (round(h["font_size"], 1), h["is_bold"], get_closest_representative_x0(h["x0"]), h["font_color"])
+        heading_level = assigned_levels_map.get(style_key, "H3")
+        
+        # Re-apply noise filtering as a final check before adding to outline
+        if is_noise(h["text"]):
+            continue
 
-        outline.append({
-            "level": level,
-            "text": h["text"].replace('\n', ' ').strip(), # Clean text
+        outline_item = {
+            "level": heading_level,
+            "text": h["text"].replace('\n', ' ').strip(),
             "page": h["page_number"],
-            "y0": h["y0"] # Keep y0 for final sort
-        })
+            "y0": h["y0"],
+        }
+        
+        outline.append(outline_item)
 
-    # Final sort by page number and then vertical position (y0)
     outline.sort(key=lambda x: (x["page"], x["y0"]))
 
-    # Remove temporary y0 field
     for item in outline:
         del item["y0"]
 

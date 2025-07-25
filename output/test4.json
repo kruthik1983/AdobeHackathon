@@ -2,107 +2,37 @@
   "title": "Sample Text PDF",
   "outline": [
     {
-      "level": "H2",
+      "level": "H1",
       "text": "Heading Example",
       "page": 1
     },
     {
-      "level": "H2",
-      "text": "This is a sample PDF document containing text in various formats. It is useful",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "for testing, formatting, and document display purposes.",
-      "page": 1
-    },
-    {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 1: Introduction",
       "page": 1
     },
     {
-      "level": "H2",
-      "text": "This document serves as an example of a text-based PDF file. It includes",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "different font styles, sizes, and alignments to demonstrate text rendering in",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "PDFs.",
-      "page": 1
-    },
-    {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 2: Text Formatting",
       "page": 1
     },
     {
       "level": "H2",
-      "text": "• Bold Text: This is bold text.",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "• Italic Text: This is italic text.",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "• Bold & Italic Text: This is bold and italic text.",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "• Monospace Text: This is code-like text.",
-      "page": 1
-    },
-    {
-      "level": "H3",
       "text": "• ~Strikethrough Text~",
       "page": 1
     },
     {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 3: Sample Paragraphs",
       "page": 1
     },
     {
-      "level": "H2",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis pulvinar",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "nisi, id scelerisque nisi fringilla non. Sed consequat orci in nisl bibendum, nec",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "varius nulla suscipit.",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "Vestibulum vehicula ligula a augue eleifend, sed pellentesque massa sollicitudin.",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "Nam tincidunt felis eu justo cursus, eget malesuada arcu iaculis.",
-      "page": 1
-    },
-    {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 4: Lists",
       "page": 1
     },
     {
-      "level": "H2",
+      "level": "H1",
       "text": "Unordered List:",
       "page": 1
     },
@@ -122,7 +52,7 @@
       "page": 1
     },
     {
-      "level": "H2",
+      "level": "H1",
       "text": "Ordered List:",
       "page": 1
     },
@@ -142,197 +72,52 @@
       "page": 1
     },
     {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 5: Table Example",
       "page": 1
     },
     {
-      "level": "H3",
-      "text": "Column 1",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Column 2",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Column 3",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Row 1A",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Row 1B",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Row 1C",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Row 2A",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Row 2B",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Row 2C",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Row 3A",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Row 3B",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Row 3C",
-      "page": 2
-    },
-    {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 6: Quote Example",
       "page": 2
     },
     {
-      "level": "H3",
-      "text": "text.”",
-      "page": 2
-    },
-    {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 7: Conclusion",
       "page": 2
     },
     {
-      "level": "H2",
-      "text": "This concludes our sample text PDF. You can modify, format, and expand this",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "content as needed.",
-      "page": 2
-    },
-    {
-      "level": "H2",
+      "level": "H1",
       "text": "Heading Example",
       "page": 2
     },
     {
-      "level": "H2",
-      "text": "This is a sample PDF document containing text in various formats. It is useful",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "for testing, formatting, and document display purposes.",
-      "page": 2
-    },
-    {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 1: Introduction",
       "page": 2
     },
     {
-      "level": "H2",
-      "text": "This document serves as an example of a text-based PDF file. It includes",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "different font styles, sizes, and alignments to demonstrate text rendering in",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "PDFs.",
-      "page": 2
-    },
-    {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 2: Text Formatting",
       "page": 2
     },
     {
       "level": "H2",
-      "text": "• Bold Text: This is bold text.",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "• Italic Text: This is italic text.",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "• Bold & Italic Text: This is bold and italic text.",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "• Monospace Text: This is code-like text.",
-      "page": 2
-    },
-    {
-      "level": "H3",
       "text": "• ~Strikethrough Text~",
       "page": 2
     },
     {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 3: Sample Paragraphs",
       "page": 2
     },
     {
-      "level": "H2",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis pulvinar",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "nisi, id scelerisque nisi fringilla non. Sed consequat orci in nisl bibendum, nec",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "varius nulla suscipit.",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "Vestibulum vehicula ligula a augue eleifend, sed pellentesque massa sollicitudin.",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "Nam tincidunt felis eu justo cursus, eget malesuada arcu iaculis.",
-      "page": 2
-    },
-    {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 4: Lists",
       "page": 3
     },
     {
-      "level": "H2",
+      "level": "H1",
       "text": "Unordered List:",
       "page": 3
     },
@@ -352,7 +137,7 @@
       "page": 3
     },
     {
-      "level": "H2",
+      "level": "H1",
       "text": "Ordered List:",
       "page": 3
     },
@@ -372,93 +157,23 @@
       "page": 3
     },
     {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 5: Table Example",
       "page": 3
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "Column 1",
       "page": 3
     },
     {
-      "level": "H3",
-      "text": "Column 2",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "Column 3",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "Row 1A",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "Row 1B",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "Row 1C",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "Row 2A",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "Row 2B",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "Row 2C",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "Row 3A",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "Row 3B",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "Row 3C",
-      "page": 3
-    },
-    {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 6: Quote Example",
       "page": 3
     },
     {
-      "level": "H3",
-      "text": "text.”",
-      "page": 3
-    },
-    {
-      "level": "H2",
+      "level": "H1",
       "text": "Section 7: Conclusion",
-      "page": 3
-    },
-    {
-      "level": "H2",
-      "text": "This concludes our sample text PDF. You can modify, format, and expand this",
-      "page": 3
-    },
-    {
-      "level": "H2",
-      "text": "content as needed.",
       "page": 3
     }
   ]

@@ -1,20 +1,21 @@
-# src/feature_extractor.py
 import re
 import fitz # PyMuPDF
+from collections import Counter
 
 def is_bold(font_name: str) -> bool:
     """Checks if a font name suggests a bold weight, robust for multilingual fonts."""
     # Common indicators for bold/heavy fonts, works across many scripts
-    return any(val in font_name.lower() for val in ['bold', 'black', 'heavy', 'demi', 'semibold', 'extrabold'])
+    return any(val in font_name.lower() for val in ['bold', 'black', 'heavy', 'demi', 'semibold', 'extrabold', 'bd'])
 
 def is_italic(font_name: str) -> bool:
     """Checks if a font name suggests an italic or oblique style."""
-    return any(val in font_name.lower() for val in ['italic', 'oblique'])
+    return any(val in font_name.lower() for val in ['italic', 'oblique', 'it'])
 
 def starts_with_numbering_or_bullet(text: str) -> bool:
     """
     Checks if a string starts with common numbering (1., 1.1, A., a.) or bullet patterns.
     Extended to include full-width numbers common in CJK languages and basic bullet points.
+    Includes common patterns for ordered lists.
     """
     # Pattern for various numbering schemes:
     # 1. / 1.1.2 / (1) / [1]
@@ -22,14 +23,16 @@ def starts_with_numbering_or_bullet(text: str) -> bool:
     # a. / b)
     # Full-width numbers: １. / １．１
     # Common bullet characters: •, *, -, –, —
+    # List items with a single letter/number followed by a dot/parenthesis at start of line.
     pattern = re.compile(
         r"^\s*("
         r"(\d+\.)+\d*|"      # 1., 1.1, 1.1.1
         r"\(\d+\)|\[\d+\]|"   # (1), [1]
-        r"[A-Z]\.?|[a-z]\.?|" # A., a.
-        r"[A-Z]\)|[a-z]\)|"   # A), a)
+        r"[A-Z]\.?\s|"        # A. (followed by space for full word)
+        r"[a-z]\.?\s|"        # a. (followed by space for full word)
+        r"[A-Z]\)|\w\)|"      # A) or single char like a) followed by ')'
         r"[０-９]+(\．[０-９]+)*|" # Full-width numbers for CJK
-        r"[\u2022\u002A\u002D\u2013\u2014]" # Common bullet characters: •, *, -, –, —
+        r"[\u2022\u00B7\u2023\u25CF\u25E6\u25CB\u25D8\u25D9\u25BA\u25C4\u2043\u25AA\u25AC\u25C9\u2605\*—\-–+]" # Comprehensive bullet characters
         r")\s*", re.UNICODE
     )
     return bool(pattern.match(text))
@@ -84,21 +87,31 @@ def extract_features(pages_data):
                         continue
 
                     # Aggregate font information from all spans in the line
-                    # Using the dominant font size and checking for any bold/italic spans
+                    # Using the most common font size and checking for any bold/italic spans
                     dominant_font_size = 0
-                    font_sizes = [s["size"] for s in line["spans"]]
-                    if font_sizes:
-                        dominant_font_size = max(set(font_sizes), key=font_sizes.count) # Most common font size
+                    if line["spans"]:
+                        font_sizes = [round(s["size"], 1) for s in line["spans"]]
+                        dominant_font_size = Counter(font_sizes).most_common(1)[0][0]
 
                     is_line_bold = any(is_bold(span["font"]) for span in line["spans"])
                     is_line_italic = any(is_italic(span["font"]) for span in line["spans"])
                     
                     # Use the font name of the first span for general font family identification
+                    # This might not be perfectly representative if multiple fonts are used on one line,
+                    # but it's a practical heuristic for typical heading lines.
                     first_span_font_name = line["spans"][0]["font"]
+                    
+                    # --- NEW: Extract font color (using the color of the first span)
+                    # Colors are integers, e.g., 0 for black, 16777215 for white.
+                    # We'll use this raw integer value.
+                    font_color = line["spans"][0].get("color", 0) 
 
                     line_bbox = fitz.Rect(line["bbox"])
 
-                    space_above = line_bbox.y0 - prev_bbox_y1 if prev_bbox_y1 > 0 else 0
+                    # Calculate space_above. If it's the first line on a page or first line of a block, it's 0.
+                    # Or relative to the previous line.
+                    current_line_y0 = line_bbox.y0
+                    space_above = current_line_y0 - prev_bbox_y1 if prev_bbox_y1 > 0 else 0
                     
                     feature_vector = {
                         "text": line_text,
@@ -106,6 +119,7 @@ def extract_features(pages_data):
                         "bbox": line_bbox,
                         "font_size": dominant_font_size,
                         "font_name": first_span_font_name, # Representative font name
+                        "font_color": font_color, # NEW feature
                         "is_bold": is_line_bold,
                         "is_italic": is_line_italic,
                         "is_all_caps": line_text.isupper() and any(c.isalpha() for c in line_text),
@@ -116,9 +130,10 @@ def extract_features(pages_data):
                         "space_above": space_above,
                         "x0": line_bbox.x0, # X-coordinate for indentation analysis
                         "y0": line_bbox.y0, # Y-coordinate for sorting
-                        "page_height": page_height # For relative position calculations if needed
+                        "page_height": page_height, # For relative position calculations if needed
+                        "block_id": block.get("number") # Unique ID for block if needed for context
                     }
                     all_lines_features.append(feature_vector)
-                    prev_bbox_y1 = line_bbox.y1
+                    prev_bbox_y1 = line_bbox.y1 # Update for the next line in sequence
     
     return all_lines_features

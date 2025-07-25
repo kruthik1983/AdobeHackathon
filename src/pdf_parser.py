@@ -1,5 +1,5 @@
 # src/pdf_parser.py
-import fitz  # PyMuPDF
+import fitz # PyMuPDF
 import os
 
 def process_pdf(file_path: str):
@@ -17,8 +17,9 @@ def process_pdf(file_path: str):
     """
     try:
         doc = fitz.open(file_path)
+        # Hackathon constraint check: maximum 50 pages
         if doc.page_count > 50:
-            print(f"Warning: PDF {os.path.basename(file_path)} has {doc.page_count} pages, exceeding the 50-page limit. Processing anyway for demonstration purposes but be aware of contest rules.")
+            print(f"Warning: PDF {os.path.basename(file_path)} has {doc.page_count} pages, exceeding the 50-page limit. Only processing the first 50 pages.")
         
         all_pages_data = []
         for page_num, page in enumerate(doc):
