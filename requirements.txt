@@ -1,2 +1,6 @@
 pymupdf
 numpy
+pandas
+scikit-learn
+joblib
+opencv-python

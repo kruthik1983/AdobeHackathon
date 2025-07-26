@@ -1,600 +1,300 @@
 {
-  "title": "Welcome to the “Connecting the Dots” Challenge",
+  "title": "",
   "outline": [
     {
-      "level": "H1",
-      "text": "Welcome to the “Connecting the Dots” Challenge",
-      "page": 2
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Rethink Reading. Rediscover Knowledge",
       "page": 2
     },
     {
-      "level": "H3",
+      "level": "H2",
+      "text": "That’s the future we’re building — and we want you to help shape it.",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "In the Connecting the Dots Challenge, your mission is to reimagine the humble",
+      "page": 2
+    },
+    {
+      "level": "H2",
       "text": "PDF as an intelligent, interactive experience—one that understands structure,",
       "page": 2
     },
     {
-      "level": "H3",
+      "level": "H2",
+      "text": "surfaces insights, and responds to you like a trusted research companion.",
+      "page": 2
+    },
+    {
+      "level": "H2",
       "text": "The Journey Ahead",
       "page": 2
     },
     {
-      "level": "H3",
-      "text": "• Round 1:",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "• Round 2:",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "It’s showtime! Build a beautiful, intuitive reading webapp using Adobe’s",
-      "page": 2
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Why This Matters",
       "page": 2
     },
     {
-      "level": "H3",
+      "level": "H2",
+      "text": "context. You’re not just building tools — you’re building the future of how we",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "read, learn, and connect. No matter your background — ML hacker, UI builder,",
+      "page": 2
+    },
+    {
+      "level": "H2",
       "text": "Are you in?",
       "page": 2
     },
     {
-      "level": "H1",
-      "text": "Round 1A: Understand Your Document",
-      "page": 3
+      "level": "H2",
+      "text": "experience that feels like magic. Let’s go.",
+      "page": 2
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "Challenge Theme: Connecting the Dots Through Docs",
       "page": 3
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "Your Mission",
       "page": 3
     },
     {
-      "level": "H3",
+      "level": "H2",
+      "text": "outline of the document — essentially the Title, and headings like H1, H2, and",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "H3 — in a clean, hierarchical format.",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "This outline will be the foundation for the rest of your hackathon journey.",
+      "page": 3
+    },
+    {
+      "level": "H2",
       "text": "Why This Matters",
       "page": 3
     },
     {
-      "level": "H3",
-      "text": "PDFs are everywhere — but machines don’t naturally understand their",
+      "level": "H2",
+      "text": "generation.",
       "page": 3
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "What You Need to Build",
       "page": 3
     },
     {
-      "level": "H3",
-      "text": "You must build a solution that:",
-      "page": 3
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "• Accepts a PDF file (up to 50 pages)",
       "page": 3
     },
     {
-      "level": "H3",
-      "text": "• Extracts:",
+      "level": "H2",
+      "text": "{",
       "page": 3
     },
     {
-      "level": "H3",
-      "text": "o Title",
+      "level": "H2",
+      "text": "\"outline\": [",
       "page": 3
     },
     {
-      "level": "H3",
-      "text": "o Headings: H1, H2, H3 (with level and page number)",
+      "level": "H2",
+      "text": "]",
       "page": 3
     },
     {
-      "level": "H3",
-      "text": "• Outputs a valid JSON file in the format below:",
+      "level": "H2",
+      "text": "}",
       "page": 3
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "You Will Be Provided",
       "page": 3
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "1. A sample input PDF (e.g., sample.pdf)",
       "page": 3
     },
     {
-      "level": "H3",
-      "text": "2. A sample ground truth output (sample.json) for format clarity",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "3. Sample Dockerfile",
-      "page": 4
-    },
-    {
-      "level": "H3",
-      "text": "4. Sample Solution",
-      "page": 4
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Docker Requirements",
       "page": 4
     },
     {
-      "level": "H3",
-      "text": "• Please ensure your Dockerfile is compatible with AMD64",
-      "page": 4
-    },
-    {
-      "level": "H3",
-      "text": "• CPU architecture: amd64 (x86_64)",
-      "page": 4
-    },
-    {
-      "level": "H3",
-      "text": "• No GPU dependencies",
-      "page": 4
-    },
-    {
-      "level": "H3",
-      "text": "• Model size (if used) ≤ 200MB",
-      "page": 4
-    },
-    {
-      "level": "H3",
-      "text": "• Should work offline — no network/internet calls",
-      "page": 4
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Expected Execution",
       "page": 4
     },
     {
-      "level": "H3",
-      "text": "We will build the docker image using the following command:",
+      "level": "H2",
+      "text": "mysolutionname:somerandomidentifier```",
       "page": 4
     },
     {
-      "level": "H3",
-      "text": "```docker build --platform linux/amd64 -t",
+      "level": "H2",
+      "text": "specified in the submitted instructions.",
       "page": 4
     },
     {
-      "level": "H3",
-      "text": "```docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --",
-      "page": 4
-    },
-    {
-      "level": "H3",
-      "text": "Your container should:",
-      "page": 4
-    },
-    {
-      "level": "H3",
-      "text": "• Automatically process all PDFs from /app/input directory,",
-      "page": 4
-    },
-    {
-      "level": "H3",
-      "text": "• output.json",
-      "page": 4
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Constraints",
       "page": 4
     },
     {
-      "level": "H3",
-      "text": "Constraint",
+      "level": "H2",
+      "text": "Constraint  Requirement",
       "page": 4
     },
     {
-      "level": "H3",
-      "text": "Requirement",
+      "level": "H2",
+      "text": "Execution",
       "page": 4
     },
     {
-      "level": "H3",
+      "level": "H2",
+      "text": "time",
+      "page": 4
+    },
+    {
+      "level": "H2",
       "text": "No internet access",
       "page": 5
     },
     {
-      "level": "H3",
-      "text": "allowed",
-      "page": 5
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Scoring Criteria",
       "page": 5
     },
     {
-      "level": "H3",
+      "level": "H1",
       "text": "Max",
       "page": 5
     },
     {
-      "level": "H3",
-      "text": "Criteria",
+      "level": "H2",
+      "text": "Heading Detection Accuracy (Precision +",
       "page": 5
     },
     {
-      "level": "H3",
-      "text": "Points",
-      "page": 5
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Bonus: Multilingual Handling (e.g.,",
       "page": 5
     },
     {
-      "level": "H3",
-      "text": "Japanese)",
+      "level": "H2",
+      "text": "Total  45",
       "page": 5
     },
     {
-      "level": "H3",
-      "text": "Total",
-      "page": 5
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Submission Checklist",
       "page": 5
     },
     {
-      "level": "H3",
-      "text": "2. A working Dockerfile",
-      "page": 5
-    },
-    {
-      "level": "H3",
-      "text": "3. All dependencies installed within the container",
-      "page": 5
-    },
-    {
-      "level": "H3",
-      "text": "4. A README.md that explains:",
-      "page": 5
-    },
-    {
-      "level": "H3",
-      "text": "o Your approach",
-      "page": 5
-    },
-    {
-      "level": "H3",
-      "text": "o Any models or libraries used",
-      "page": 5
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Pro Tips",
       "page": 5
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "What Not to Do",
       "page": 6
     },
     {
-      "level": "H3",
-      "text": "• Do not hardcode headings or file-specific logic",
-      "page": 6
-    },
-    {
-      "level": "H3",
-      "text": "• Do not make API or web calls",
-      "page": 6
-    },
-    {
-      "level": "H3",
-      "text": "• Do not exceed the runtime/model size constraints",
-      "page": 6
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "[[Public Dataset Folder]]",
       "page": 6
     },
     {
-      "level": "H1",
-      "text": "Round 1B: Persona-Driven Document Intelligence",
-      "page": 7
+      "level": "H2",
+      "text": "(For Sample Input and Output Files, please refer to the appendix)",
+      "page": 6
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "Theme: “Connect What Matters — For the User Who Matters”",
       "page": 7
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "Challenge Brief (For Participants)",
       "page": 7
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "Input Specification",
       "page": 7
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "2. Document Collection: 3-10 related PDFs Persona Definition: Role",
       "page": 7
     },
     {
-      "level": "H3",
-      "text": "3. Job-to-be-Done: Concrete task the persona needs to accomplish",
+      "level": "H2",
+      "text": "variety.",
       "page": 7
     },
     {
-      "level": "H3",
-      "text": "• Documents can be from any domain (Example: Research papers,",
-      "page": 7
-    },
-    {
-      "level": "H3",
-      "text": "• Persona can again be very diverse (Example: Researcher, Student,",
-      "page": 7
-    },
-    {
-      "level": "H3",
-      "text": "• Job-to-be-done: This will be related to the persona (Example:",
-      "page": 7
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Sample Test Cases",
       "page": 7
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "Test Case 1: Academic Research",
       "page": 7
     },
     {
-      "level": "H3",
-      "text": "• Documents: 4 research papers on \"Graph Neural Networks for",
-      "page": 7
-    },
-    {
-      "level": "H3",
-      "text": "• Persona: PhD Researcher in Computational Biology",
-      "page": 7
-    },
-    {
-      "level": "H3",
-      "text": "• Job: \"Prepare a comprehensive literature review focusing on",
-      "page": 7
-    },
-    {
-      "level": "H3",
-      "text": "Test Case 2: Business Analysis",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "• Documents: 3 annual reports from competing tech companies",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "• Persona: Investment Analyst",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "• Job: \"Analyze revenue trends, R&D investments, and market",
-      "page": 8
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Test Case 3: Educational Content",
       "page": 8
     },
     {
-      "level": "H3",
-      "text": "• Documents: 5 chapters from organic chemistry textbooks",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "• Persona: Undergraduate Chemistry Student",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "• Job: \"Identify key concepts and mechanisms for exam preparation",
-      "page": 8
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Required Output",
       "page": 8
     },
     {
-      "level": "H3",
-      "text": "• Output JSON format: Refer challenge1b_output.json",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "The output should contain:",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "1. Metadata:",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "a. Input documents",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "b. Persona",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "c. Job to be done",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "d. Processing timestamp",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "2. Extracted Section:",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "a. Document",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "b. Page number",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "c. Section title",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "d. Importance_rank",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "3. Sub-section Analysis:",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "a. Document",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "c. Refined Text",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "d. Page Number Constraints",
-      "page": 8
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "• Must run on CPU only",
       "page": 8
     },
     {
-      "level": "H3",
+      "level": "H2",
       "text": "• Model size ≤ 1GB",
       "page": 8
     },
     {
-      "level": "H3",
-      "text": "• Processing time ≤ 60 seconds for document collection (3-5",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "• No internet access allowed during execution",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "Deliverables",
-      "page": 9
-    },
-    {
-      "level": "H3",
-      "text": "• approach_explanation.md (300-500 words explaining",
-      "page": 9
-    },
-    {
-      "level": "H3",
-      "text": "• Dockerfile and execution instructions",
-      "page": 9
-    },
-    {
-      "level": "H3",
+      "level": "H2",
       "text": "Sample input/output for testing",
       "page": 9
     },
     {
       "level": "H3",
-      "text": "Scoring Criteria",
-      "page": 9
-    },
-    {
-      "level": "H3",
-      "text": "Max",
-      "page": 9
-    },
-    {
-      "level": "H3",
-      "text": "Points",
-      "page": 9
-    },
-    {
-      "level": "H3",
-      "text": "Description",
-      "page": 9
-    },
-    {
-      "level": "H3",
-      "text": "Criteria",
-      "page": 9
-    },
-    {
-      "level": "H3",
-      "text": "Quality of granular subsection",
+      "text": "•",
       "page": 9
     },
     {
       "level": "H2",
-      "text": "Appendix:",
-      "page": 10
-    },
-    {
-      "level": "H3",
-      "text": "https://github.com/jhaaj08/Adobe-India-",
-      "page": 10
-    },
-    {
-      "level": "H3",
-      "text": "Hackathon25.git",
-      "page": 10
+      "text": "Scoring Criteria",
+      "page": 9
     }
   ]
 }

@@ -3,38 +3,8 @@
   "outline": [
     {
       "level": "H2",
-      "text": "Sample Date:",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "Prepared by:",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "Created and Tested Using:",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "Features Demonstrated:",
-      "page": 1
-    },
-    {
-      "level": "H1",
       "text": "Overview",
       "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "PDF Bookmark Sample",
-      "page": 1
-    },
-    {
-      "level": "H2",
-      "text": "Sample Data File",
-      "page": 2
     },
     {
       "level": "H2",
@@ -42,103 +12,53 @@
       "page": 2
     },
     {
-      "level": "H3",
-      "text": "The example bookmark file includes three distinct sections:",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "PDF Bookmark Sample",
-      "page": 2
-    },
-    {
-      "level": "H1",
-      "text": "Sample Files",
-      "page": 3
-    },
-    {
-      "level": "H2",
-      "text": "Filename",
-      "page": 3
-    },
-    {
-      "level": "H2",
-      "text": "Description",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "ap_bookmark.IFD",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "ap_bookmark.mdf",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "ap_bookmark.dat",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "ap_bookmark.bmk",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "ap_bookmark.pdf",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "ap_bookmark_doc.pdf",
-      "page": 3
-    },
-    {
       "level": "H1",
       "text": "Deploying the Sample",
       "page": 3
     },
     {
-      "level": "H2",
-      "text": "To bookmark by …",
-      "page": 3
-    },
-    {
-      "level": "H2",
-      "text": "Use the command line parameter …",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "-abmkap_bookmark.bmk -abmsinvoices",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "-abmkap_bookmark.bmk -abmstype",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "-abmkap_bookmark.bmk -abmsamount",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "PDF Bookmark Sample",
+      "level": "H1",
+      "text": "1. Open the template design ap_bookmark.IFD in Output Designer and recompile the",
       "page": 3
     },
     {
       "level": "H1",
+      "text": "2. Modify the -z option in the ^job command in the data file ap_bookmark.dat to:",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "• Identify the bookmark file using the -abmk command.",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "• Identify the section for which to generate bookmarks, if desired, using the -abms",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "• Place ap_bookmark.IFD in the Designs subdirectory for Output Designer.",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "• Place ap_bookmark.mdf in the forms subdirectory accessible to Central.",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "• Place ap_bookmark.bmk in an addressable directory.",
+      "page": 4
+    },
+    {
+      "level": "H2",
       "text": "Running the Sample",
       "page": 4
     },
     {
-      "level": "H3",
-      "text": "PDF Bookmark Sample",
+      "level": "H1",
+      "text": "• To run this sample, place ap_bookmark.dat in the collector directory scanned by Central.",
       "page": 4
     }
   ]

@@ -2,18 +2,23 @@
   "title": "Lorem ipsum",
   "outline": [
     {
-      "level": "H3",
-      "text": "condimentum.  Vivamus  dapibus  sodales  ex,  vitae  malesuada  ipsum  cursus",
+      "level": "H1",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing",
       "page": 1
     },
     {
-      "level": "H1",
-      "text": "Cras fringilla ipsum magna, in fringilla dui commodo",
-      "page": 2
+      "level": "H2",
+      "text": "Maecenas non lorem quis tellus placerat varius.",
+      "page": 1
     },
     {
       "level": "H2",
       "text": "Maecenas mauris lectus, lobortis et purus mattis, blandit",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "In eleifend velit vitae libero sollicitudin euismod.",
       "page": 3
     }
   ]

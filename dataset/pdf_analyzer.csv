@@ -1,0 +1,1056 @@
+text,font_size,page_number,level,is_bold,is_centered,space_above,word_count,x0
+"Application form for grant of LTC advance","12.0",1,"Title",True,False,0.0,7,180.1
+"1.","11.0",1,"Body",False,False,23.3,1,89.1
+"Name of the Government Servant","11.0",1,"Body",False,False,0.0,5,153.2
+"2.","11.0",1,"Body",False,False,2.7,1,89.1
+"Designation","11.0",1,"Body",False,False,0.0,1,153.2
+"3.","11.0",1,"Body",False,False,2.7,1,89.1
+"Date of entering the Central Government","11.0",1,"Body",False,False,0.0,6,153.2
+"Service","11.0",1,"Body",False,False,2.8,1,164.2
+"4.","11.0",1,"Body",False,False,2.7,1,89.1
+"$PAY+SI+NPA$","11.0",1,"Body",False,False,0.0,1,153.2
+"5.","11.0",1,"Body",False,False,2.7,1,89.1
+"Whether permanent or temporary","11.0",1,"Body",False,False,0.0,4,153.2
+"6.","11.0",1,"Body",False,False,16.8,1,89.1
+"Home Town as recorded in the Service Book","11.0",1,"Body",False,False,0.0,8,153.2
+"7.","11.0",1,"Body",False,False,16.8,1,89.1
+"Whether wife / husband is employed and if","11.0",1,"Body",False,False,0.0,8,153.2
+"so whether entitled to LTC","11.0",1,"Body",False,False,2.8,5,164.2
+"8.","11.0",1,"Body",False,False,2.7,1,89.1
+"Whether the concession is to be availed for","11.0",1,"Body",False,False,0.0,8,153.2
+"visiting home town and if so block for which","11.0",1,"Body",False,False,2.8,9,164.2
+"LTC is to be availed.","11.0",1,"Body",False,False,2.8,5,164.2
+"9.","11.0",1,"Body",False,False,2.7,1,89.1
+"(a) If the concession is to visit anywhere in","11.0",1,"Body",False,False,0.0,9,153.2
+"India, the place to be visited.","11.0",1,"Body",False,False,2.8,6,168.2
+"(b) Block for which to be availed.","11.0",1,"Body",False,False,13.9,6,164.2
+"Single rail fare/bus fare from the","11.0",1,"Body",False,False,2.7,6,153.2
+"10.","11.0",1,"Body",False,False,0.0,1,89.1
+"headquarters to home town/place of visit by","11.0",1,"Body",False,False,0.0,8,153.2
+"shortest route.","11.0",1,"Body",False,False,2.8,2,164.2
+"Persons in respect of whom LTC is proposed to be availed.","11.0",1,"Body",True,False,5.5,11,189.2
+"Name","11.0",1,"Body",True,False,5.5,1,163.2
+"S.No","11.0",1,"Body",True,False,0.0,1,96.1
+"Age","11.0",1,"Body",True,False,0.0,1,288.1
+"Relationship","11.0",1,"Body",True,False,0.0,1,388.0
+"1.","11.0",1,"Body",False,False,5.5,1,100.1
+"2.","11.0",1,"Body",False,False,13.9,1,100.1
+"11.","11.0",1,"Body",False,False,0.0,1,89.1
+"3.","11.0",1,"Body",False,False,0.0,1,100.1
+"4.","11.0",1,"Body",False,False,13.9,1,100.1
+"5.","11.0",1,"Body",False,False,13.9,1,100.1
+"6.","11.0",1,"Body",False,False,13.9,1,100.1
+"12.","11.0",1,"Body",False,False,2.7,1,89.1
+"Amount of advance required.","11.0",1,"Body",False,False,0.0,4,153.2
+"Rs.","11.0",1,"Body",False,False,0.0,1,364.6
+"I declare that the particulars furnished above are true and correct to the best of my knowledge.","11.0",1,"Body",False,False,19.4,17,105.1
+"I undertake to produce the tickets for the outward journey within ten days of receipt of the advance.","11.0",1,"Body",False,False,10.9,19,105.1
+"In the event of cancellation of the journey or if I fail to produce the tickets within ten days of receipt of","11.0",1,"Body",False,False,10.9,21,105.1
+"advance, I undertake to refund the entire advance in one lump sum.","11.0",1,"Body",False,False,2.8,13,105.1
+"Date","11.0",1,"Body",True,False,10.9,1,105.1
+"Signature of Government Servant.","11.0",1,"Body",True,False,0.0,4,432.1
+"Overview","18.0",1,"Title",False,False,0.0,1,343.4
+"Foundation Level Extensions","18.0",1,"Title",False,False,11.3,3,272.8
+"Revision History","14.0",3,"H1",True,False,59.3,2,298.5
+"Table of Contents","14.0",4,"H1",True,False,59.3,3,293.4
+"1. Introduction to the Foundation Level Extensions","14.0",6,"H1",True,False,143.6,7,124.7
+"2. Introduction to Foundation Level Agile Tester Extension","14.0",7,"H1",True,False,143.6,7,124.7
+"2.1 Intended Audience","12.0",7,"H2",True,False,5.4,3,83.9
+"2.2 Career Paths for Testers","12.0",7,"H2",True,False,5.4,5,83.9
+"2.3 Learning Objectives","12.0",7,"H2",True,False,23.3,3,83.9
+"2.4 Entry Requirements","12.0",8,"H2",True,False,35.4,3,83.9
+"2.5 Structure and Course Duration","12.0",8,"H2",True,False,5.4,5,83.9
+"2.6 Keeping It Current","12.0",9,"H2",True,False,122.3,4,83.9
+"3. Overview of the Foundation Level Extension – Agile TesterSyllabus","14.0",10,"H1",True,False,143.6,10,124.7
+"3.1 Business Outcomes","12.0",10,"H2",True,False,5.4,3,83.9
+"3.2 Content","12.0",10,"H2",True,False,5.4,2,83.9
+"4. References","14.0",12,"H1",True,False,143.6,2,324.9
+"4.1 Trademarks","12.0",12,"H2",True,False,5.4,2,83.9
+"4.2 Documents and Web Sites","12.0",12,"H2",True,False,5.4,5,83.9
+"RFP:Request for Proposal To Present a Proposal for Developing the Business Plan for the Ontario Digital Library","18.0",1,"Title",True,False,24.1,19,158.4
+"Ontario’s Digital Library","18.0",2,"H1",True,False,35.4,3,313.1
+"A Critical Component for Implementing Ontario’s Road Map to Prosperity Strategy","12.0",2,"H1",True,False,7.2,12,217.4
+"Summary","14.0",2,"H2",True,False,24.3,1,64.2
+"Timeline:","12.0",2,"H3",True,False,5.5,1,64.2
+"Background","14.0",3,"H2",True,False,5.5,1,64.2
+"Equitable access for all Ontarians:","10.0",4,"H3",True,False,5.5,5,64.2
+"Shared decision-making and accountability:","10.0",4,"H3",True,False,5.5,4,64.2
+"Shared governance structure:","10.0",4,"H3",True,False,5.5,3,64.2
+"Shared funding:","10.0",4,"H3",True,False,5.5,2,64.2
+"Local points of entry:","10.0",5,"H3",True,False,35.4,4,64.2
+"Access:","10.0",5,"H3",True,False,5.5,1,75.2
+"Guidance and Advice:","10.0",5,"H3",True,False,5.5,3,75.2
+"Training:","10.0",5,"H3",True,False,5.5,1,75.2
+"Provincial Purchasing & Licensing:","10.0",5,"H3",True,False,5.5,4,75.2
+"Technological Support:","10.0",5,"H3",True,False,5.5,2,75.2
+"What could the ODL really mean?","12.0",5,"H3",True,False,5.5,6,64.2
+"For each Ontario citizen it could mean:","10.0",5,"H4",True,False,5.5,7,64.2
+"For each Ontario student it could mean:","10.0",5,"H4",True,False,5.5,7,64.2
+"For each Ontario library it could mean:","10.0",6,"H4",True,False,5.5,7,64.2
+"For the Ontario government it could mean:","10.0",6,"H4",True,False,5.5,7,64.2
+"The Business Plan to be Developed","12.0",6,"H2",True,False,5.5,6,316.4
+"Milestones","12.0",7,"H3",True,False,5.5,1,332.2
+"Approach and Specific Proposal Requirements","12.0",7,"H2",True,False,5.5,5,263.8
+"Evaluation and Awarding of Contract","12.0",8,"H2",True,False,35.4,5,283.0
+"Appendix A: ODL Envisioned Phases & Funding","14.0",9,"H2",True,False,35.4,7,189.9
+"Phase I: Business Planning","12.0",9,"H3",True,False,5.5,4,64.2
+"Phase II: Implementing and Transitioning","12.0",9,"H3",True,False,5.5,4,64.2
+"Phase III: Operating and Growing the ODL","12.0",9,"H3",True,False,5.5,6,64.2
+"Appendix B: ODL Steering Committee Terms of Reference","14.0",11,"H2",True,False,35.4,7,189.9
+"1. Preamble","12.0",11,"H3",True,False,24.3,2,64.2
+"2. Terms of Reference","12.0",11,"H3",True,False,5.5,4,64.2
+"3. Membership","12.0",11,"H3",True,False,5.5,2,64.2
+"4. Appointment Criteria and Process","12.0",12,"H3",True,False,5.5,5,64.2
+"5. Term","12.0",12,"H3",True,False,5.5,2,64.2
+"6. Chair","12.0",12,"H3",True,False,5.5,2,64.2
+"7. Meetings","12.0",12,"H3",True,False,5.5,2,64.2
+"8. Lines of Accountability and Communication","12.0",12,"H3",True,False,5.5,5,64.2
+"9. Financial and Administrative Policies","12.0",13,"H3",True,False,5.5,5,64.2
+"Appendix C: ODL’s Envisioned Electronic Resources","14.0",14,"H2",True,False,35.4,6,189.9
+"Parsippany -Troy Hills STEM Pathways","10.0",1,"Title",True,False,35.2,6,152.0
+"PATHWAY OPTIONS","20.0",1,"H1",True,False,25.9,2,326.0
+"HOPE To SEE You THERE!","16.0",1,"H1",True,False,8.2,5,190.5
+"INVOICE","36.0",1,"Title",True,False,0.0,1,50.9
+"Leave Policy","24.0",1,"Title",True,True,0.0,2,234.0
+"1. PURPOSE","14.0",1,"H1",True,False,16.8,2,50.9
+"2. SCOPE","14.0",1,"H1",True,False,11.2,2,50.9
+"3. TYPES OF LEAVE","14.0",1,"H1",True,False,11.2,4,50.9
+"3.1. Casual Leave (CL)","12.0",1,"H2",True,False,8.4,4,50.9
+"3.2. Earned Leave (EL)","12.0",1,"H2",True,False,8.4,4,50.9
+"3.3. Sick Leave (SL)","12.0",2,"H2",True,False,5.6,4,50.9
+"3.4. Maternity Leave (ML)","12.0",2,"H2",True,False,8.4,4,50.9
+"3.5. Paternity Leave (PL)","12.0",2,"H2",True,False,8.4,4,50.9
+"3.6. Compensatory Off","12.0",2,"H2",True,False,8.4,3,50.9
+"4. GENERAL LEAVE GUIDELINES","14.0",3,"H1",True,False,11.2,4,50.9
+"Top Trumps Specials","22.0",1,"Title",True,True,0.0,3,205.1
+"How to Play","18.0",1,"H1",True,False,13.8,3,50.9
+"How to use your Top Trumps cards to play any of the games:","11.0",1,"H1",True,False,8.4,12,50.9
+"Frankfurt International School - Internal Audit Review","20.0",1,"Title",True,True,0.0,7,102.5
+"Introduction","16.0",2,"H1",True,False,14.0,1,50.9
+"Executive Summary","16.0",2,"H1",True,False,14.0,2,50.9
+"Key Findings","14.0",2,"H2",True,False,11.2,2,67.9
+"Detailed Report","16.0",3,"H1",True,False,14.0,2,50.9
+"Financial Controls","14.0",3,"H2",True,False,11.2,2,67.9
+"Operational Efficiency","14.0",4,"H2",True,False,11.2,2,67.9
+"Recommendations","16.0",5,"H1",True,False,14.0,1,50.9
+"Management Response","16.0",6,"H1",True,False,14.0,2,50.9
+"Appendix","16.0",7,"H1",True,False,14.0,1,50.9
+"Chapter 1 Introduction","28.0",1,"Title",True,False,0.0,3,178.6
+"1.1 Professional software development","18.0",2,"H1",True,False,22.4,4,50.9
+"1.2 Software engineering ethics","18.0",16,"H1",True,False,22.4,4,50.9
+"1.3 Case studies","18.0",21,"H1",True,False,22.4,3,50.9
+"The Lean Startup","36.0",1,"Title",True,True,0.0,3,157.1
+"Introduction","24.0",2,"H1",True,False,28.0,1,50.9
+"Part One: Vision","18.0",5,"H1",True,False,22.4,3,50.9
+"Chapter 1: Start","16.0",5,"H2",True,False,14.0,3,50.9
+"Chapter 2: Define","16.0",6,"H2",True,False,14.0,3,50.9
+"Chapter 3: Learn","16.0",7,"H2",True,False,14.0,3,50.9
+"Chapter 4: Experiment","16.0",8,"H2",True,False,14.0,3,50.9
+"Data Structures and Algorithms","28.0",1,"Title",True,True,0.0,4,142.9
+"Chapter-1: Introduction To Data Structure","18.0",2,"H1",True,False,22.4,6,50.9
+"1.1: Basic Terminology","14.0",2,"H2",True,False,11.2,3,67.9
+"1.2: Classification of Data Structure","14.0",3,"H2",True,False,11.2,5,67.9
+"1.3: Operations on Data Structure","14.0",4,"H2",True,False,11.2,5,67.9
+"1.4: Algorithm","14.0",5,"H2",True,False,11.2,2,67.9
+"1.5: Complexity of Algorithm","14.0",6,"H2",True,False,11.2,4,67.9
+"1.6: Time-Space trade-off","14.0",8,"H2",True,False,11.2,3,67.9
+"Bookkeeping Basics","28.0",1,"Title",True,True,0.0,2,198.8
+"What is bookkeeping?","18.0",1,"H1",True,False,22.4,3,50.9
+"Why is bookkeeping important?","18.0",1,"H1",True,False,22.4,4,50.9
+"What are the different types of bookkeeping?","18.0",2,"H1",True,False,22.4,7,50.9
+"Bookkeeping vs. Accounting: What’s the difference?","18.0",3,"H1",True,False,22.4,7,50.9
+"What this guide covers","18.0",4,"H1",True,False,22.4,4,50.9
+"A-LEVEL SOCIOLOGY","24.0",1,"Title",True,True,0.0,2,214.3
+"Paper 1: Education with Theory and Methods","16.0",1,"H1",True,False,14.0,7,50.9
+"Education","12.0",1,"H2",True,False,8.4,1,67.9
+"Methods in Context","12.0",1,"H2",True,False,8.4,3,67.9
+"Theory and Methods","12.0",1,"H2",True,False,8.4,3,67.9
+"Paper 2: Topics in Sociology","16.0",1,"H1",True,False,14.0,5,50.9
+"Section A: Families and Households","12.0",1,"H2",True,False,8.4,5,67.9
+"Section B: Beliefs in Society","12.0",1,"H2",True,False,8.4,5,67.9
+"Paper 3: Crime and Deviance with Theory and Methods","16.0",1,"H1",True,False,14.0,8,50.9
+"Crime and Deviance","12.0",1,"H2",True,False,8.4,3,67.9
+"Agile Crash Course","36.0",1,"Title",True,True,0.0,3,157.1
+"What is Agile?","24.0",2,"H1",True,False,28.0,3,50.9
+"The Agile Manifesto","24.0",3,"H1",True,False,28.0,3,50.9
+"Individuals and interactions over processes and tools","14.0",4,"H2",True,False,11.2,7,50.9
+"Working software over comprehensive documentation","14.0",5,"H2",True,False,11.2,5,50.9
+"Customer collaboration over contract negotiation","14.0",6,"H2",True,False,11.2,5,50.9
+"Responding to change over following a plan","14.0",7,"H2",True,False,11.2,7,50.9
+"Values of Agile","24.0",8,"H1",True,False,28.0,3,50.9
+"Thank You","24.0",9,"H1",True,False,28.0,2,50.9
+"The Intelligent Investor","36.0",1,"Title",True,True,0.0,3,171.4
+"Introduction: What This Book Expects to Accomplish","18.0",2,"H1",True,False,22.4,8,50.9
+"Chapter 1: Investment versus Speculation: Results to Be Expected by the Intelligent Investor","16.0",3,"H2",True,False,14.0,13,50.9
+"Chapter 2: The Investor and Inflation","16.0",4,"H2",True,False,14.0,6,50.9
+"The Bitcoin Standard","36.0",1,"Title",True,True,0.0,3,180.1
+"Introduction","18.0",2,"H1",True,False,22.4,1,50.9
+"1. Money","16.0",3,"H1",True,False,14.0,2,50.9
+"2. Primitive Moneys","16.0",4,"H1",True,False,14.0,3,50.9
+"How to Win Friends and Influence People","36.0",1,"Title",True,True,0.0,7,85.7
+"Part One: Fundamental Techniques in Handling People","18.0",2,"H1",True,False,22.4,7,50.9
+"1. ‘If You Want to Gather Honey, Don’t Kick Over the Beehive’","16.0",2,"H2",True,False,14.0,12,50.9
+"2. The Big Secret of Dealing with People","16.0",3,"H2",True,False,14.0,7,50.9
+"Thinking, Fast and Slow","36.0",1,"Title",True,True,0.0,4,157.1
+"Part I: Two Systems","18.0",3,"H1",True,False,22.4,4,50.9
+"1. The Characters of the Story","16.0",3,"H2",True,False,14.0,6,50.9
+"2. Attention and Effort","16.0",4,"H2",True,False,14.0,4,50.9
+"Think and Grow Rich","36.0",1,"Title",True,True,0.0,4,157.1
+"INTRODUCTION","18.0",2,"H1",True,False,22.4,1,50.9
+"CHAPTER 1: THOUGHTS ARE THINGS","16.0",3,"H1",True,False,14.0,5,50.9
+"CHAPTER 2: DESIRE","16.0",4,"H1",True,False,14.0,3,50.9
+"The 48 Laws of Power","36.0",1,"Title",True,True,0.0,5,157.1
+"LAW 1: NEVER OUTSHINE THE MASTER","18.0",2,"H1",True,False,22.4,6,50.9
+"LAW 2: NEVER PUT TOO MUCH TRUST IN FRIENDS, LEARN HOW TO USE ENEMIES","18.0",3,"H1",True,False,22.4,14,50.9
+"LAW 3: CONCEAL YOUR INTENTIONS","18.0",4,"H1",True,False,22.4,4,50.9
+"Zero to One","36.0",1,"Title",True,True,0.0,3,205.1
+"Preface","18.0",2,"H1",True,False,22.4,1,50.9
+"1. The Challenge of the Future","16.0",3,"H1",True,False,14.0,6,50.9
+"2. Party Like It’s 1999","16.0",4,"H1",True,False,14.0,5,50.9
+"To Kill a Mockingbird","36.0",1,"Title",True,True,0.0,4,142.9
+"Context","18.0",2,"H1",True,False,22.4,1,50.9
+"Plot Overview","18.0",3,"H1",True,False,22.4,2,50.9
+"Character List","18.0",4,"H1",True,False,22.4,2,50.9
+"Analysis of Major Characters","18.0",5,"H1",True,False,22.4,4,50.9
+"The Diary of a Young Girl","36.0",1,"Title",True,True,0.0,6,114.3
+"Foreword","18.0",2,"H1",True,False,22.4,1,50.9
+"Man's Search for Meaning","36.0",1,"Title",True,True,0.0,4,142.9
+"Preface to the 1992 Edition","18.0",2,"H1",True,False,22.4,5,50.9
+"Part One: Experiences in a Concentration Camp","16.0",3,"H1",True,False,14.0,7,50.9
+"The Things You Can See Only When You Slow Down","36.0",1,"Title",True,True,0.0,11,92.6
+"Introduction","18.0",2,"H1",True,False,22.4,1,50.9
+"Chapter 1: Rest","16.0",3,"H1",True,False,14.0,3,50.9
+"Chapter 2: Mindfulness","16.0",4,"H1",True,False,14.0,3,50.9
+"1984","48.0",1,"Title",True,True,0.0,1,257.1
+"Context","18.0",2,"H1",True,False,22.4,1,50.9
+"Plot Overview","18.0",3,"H1",True,False,22.4,2,50.9
+"Character List","18.0",4,"H1",True,False,22.4,2,50.9
+"Themes","18.0",6,"H1",True,False,22.4,1,50.9
+"The Alchemist","48.0",1,"Title",True,True,0.0,2,205.1
+"Pride and Prejudice","48.0",1,"Title",True,True,0.0,3,171.4
+"The Great Gatsby","48.0",1,"Title",True,True,0.0,3,180.1
+"The Catcher in the Rye","48.0",1,"Title",True,True,0.0,5,114.3
+"Lord of the Flies","48.0",1,"Title",True,True,0.0,4,157.1
+"Animal Farm","48.0",1,"Title",True,True,0.0,2,214.3
+"Fahrenheit 451","48.0",1,"Title",True,True,0.0,2,205.1
+"Anthem","48.0",1,"Title",True,True,0.0,1,248.6
+"PART ONE","18.0",2,"H1",True,False,22.4,2,50.9
+"PART TWO","18.0",3,"H1",True,False,22.4,2,50.9
+"PART THREE","18.0",4,"H1",True,False,22.4,2,50.9
+"PART FOUR","18.0",4,"H1",True,False,14.0,2,50.9
+"PART FIVE","18.0",5,"H1",True,False,22.4,2,50.9
+"Federal Register / Vol. 70, No. 111 / Friday, June 10, 2005 / Notices","18.0",1,"Title",True,True,0.0,14,150.0
+"DEPARTMENT OF AGRICULTURE","14.0",1,"H1",True,False,16.8,3,50.9
+"Forest Service","12.0",1,"H2",True,False,8.4,2,50.9
+"DEPARTMENT OF COMMERCE","14.0",1,"H1",True,False,11.2,3,50.9
+"International Trade Administration","12.0",1,"H2",True,False,8.4,3,50.9
+"National Oceanic and Atmospheric Administration","12.0",2,"H2",True,False,8.4,5,50.9
+"DEPARTMENT OF DEFENSE","14.0",2,"H1",True,False,11.2,3,50.9
+"Department of the Army","12.0",2,"H2",True,False,8.4,4,50.9
+"DEPARTMENT OF HEALTH AND HUMAN SERVICES","14.0",3,"H1",True,False,11.2,6,50.9
+"Centers for Disease Control and Prevention","12.0",3,"H2",True,False,8.4,6,50.9
+"Health Resources and Services Administration","12.0",4,"H2",True,False,8.4,5,50.9
+"National Institutes of Health","12.0",4,"H2",True,False,8.4,4,50.9
+"Substance Abuse and Mental Health Services Administration","12.0",5,"H2",True,False,8.4,8,50.9
+"sec news digest","24.0",1,"Title",True,False,0.0,3,50.9
+"ENFORCEMENT PROCEEDINGS","14.0",1,"H1",True,False,16.8,2,214.3
+"COMMISSION CHARGES BIOTECH RESEARCH COMPANY AND FORMER PRESIDENT WITH FRAUD","12.0",1,"H2",True,False,8.4,11,50.9
+"INVESTMENT COMPANY ACT RELEASES","14.0",2,"H1",True,False,11.2,4,214.3
+"The Mexico Equity and Income Fund, Inc.","12.0",2,"H2",True,False,8.4,7,50.9
+"SELF-REGULATORY ORGANIZATIONS","14.0",2,"H1",True,False,11.2,2,214.3
+"PROPOSED RULE CHANGES","12.0",2,"H2",True,False,8.4,3,50.9
+"IMMEDIATE EFFECTIVENESS OF PROPOSED RULE CHANGE","12.0",3,"H2",True,False,8.4,6,50.9
+"APPROVAL OF PROPOSED RULE CHANGE","12.0",3,"H2",True,False,8.4,5,50.9
+"NOTICE OF FILING AND IMMEDIATE EFFECTIVENESS OF PROPOSED RULE CHANGE","12.0",4,"H2",True,False,8.4,9,50.9
+"SECURITIES ACT REGISTRATIONS","14.0",4,"H1",True,False,11.2,3,214.3
+"Leave Policy","24.0",1,"Title",True,True,0.0,2,234.0
+"1. PURPOSE","14.0",1,"H1",True,False,16.8,2,50.9
+"2. SCOPE","14.0",1,"H1",True,False,11.2,2,50.9
+"3. TYPES OF LEAVE","14.0",1,"H1",True,False,11.2,4,50.9
+"3.1. Casual Leave (CL)","12.0",1,"H2",True,False,8.4,4,50.9
+"3.2. Earned Leave (EL)","12.0",1,"H2",True,False,8.4,4,50.9
+"3.3. Sick Leave (SL)","12.0",2,"H2",True,False,5.6,4,50.9
+"3.4. Maternity Leave (ML)","12.0",2,"H2",True,False,8.4,4,50.9
+"3.5. Paternity Leave (PL)","12.0",2,"H2",True,False,8.4,4,50.9
+"3.6. Compensatory Off","12.0",2,"H2",True,False,8.4,3,50.9
+"4. GENERAL LEAVE GUIDELINES","14.0",3,"H1",True,False,11.2,4,50.9
+"Cardin, Collins Introduce Bill to Help Small Businesses, Nonprofits Impacted by Disasters","18.0",1,"Title",True,False,0.0,12,50.9
+"WASHINGTON","12.0",1,"Body",True,False,13.8,1,50.9
+"CONSOLIDATED AUDIT REPORT","24.0",1,"Title",True,True,0.0,3,180.1
+"INTRODUCTION","14.0",2,"H1",True,False,11.2,1,50.9
+"PURPOSE","12.0",2,"H2",True,False,8.4,1,50.9
+"SCOPE AND METHODOLOGY","12.0",2,"H2",True,False,8.4,3,50.9
+"BACKGROUND","14.0",2,"H1",True,False,11.2,1,50.9
+"AUDIT RESULTS","14.0",3,"H1",True,False,11.2,2,50.9
+"RECOMMENDATIONS","14.0",4,"H1",True,False,11.2,1,50.9
+"MANAGEMENT COMMENTS","14.0",5,"H1",True,False,11.2,2,50.9
+"EVALUATION OF MANAGEMENT COMMENTS","14.0",5,"H1",True,False,11.2,4,50.9
+"Research Handbook","24.0",1,"Title",True,False,0.0,2,50.9
+"PREFACE","14.0",2,"H1",True,False,11.2,1,50.9
+"PART I RESEARCH PROCESS","14.0",3,"H1",True,False,11.2,4,50.9
+"Chapter 1: The Research Problem","12.0",3,"H2",True,False,8.4,5,50.9
+"Chapter 2: The Research Proposal","12.0",4,"H2",True,False,8.4,5,50.9
+"Chapter 3: Ethics in Research","12.0",5,"H2",True,False,8.4,4,50.9
+"PART II RESEARCH METHODS","14.0",6,"H1",True,False,11.2,4,50.9
+"Chapter 4: Qualitative Methods","12.0",6,"H2",True,False,8.4,4,50.9
+"Chapter 5: Quantitative Methods","12.0",7,"H2",True,False,8.4,4,50.9
+"PART III RESEARCH OUTPUT AND DISSEMINATION","14.0",8,"H1",True,False,11.2,6,50.9
+"Chapter 6: Writing a Thesis or Dissertation","12.0",8,"H2",True,False,8.4,6,50.9
+"Chapter 7: Publishing Your Research","12.0",9,"H2",True,False,8.4,4,50.9
+"APPENDICES","14.0",10,"H1",True,False,11.2,1,50.9
+"APPENDIX A: SAMPLES OF CONSENT FORMS","12.0",10,"H2",True,False,8.4,6,50.9
+"APPENDIX B: RESEARCH ETHICS BOARDS","12.0",11,"H2",True,False,8.4,5,50.9
+"GLOSSARY","14.0",12,"H1",True,False,11.2,1,50.9
+"INDEX","14.0",13,"H1",True,False,11.2,1,50.9
+"AUDIT REPORT","24.0",1,"Title",True,True,0.0,2,214.3
+"Report on the Financial Statements","14.0",2,"H1",True,False,11.2,5,50.9
+"Management's Responsibility for the Financial Statements","12.0",2,"H2",True,False,8.4,7,50.9
+"Auditor's Responsibility","12.0",2,"H2",True,False,8.4,2,50.9
+"Opinion","12.0",3,"H2",True,False,8.4,1,50.9
+"Report on Other Legal and Regulatory Requirements","14.0",3,"H1",True,False,11.2,7,50.9
+"ANNUAL REPORT 2024","36.0",1,"Title",True,True,0.0,3,157.1
+"Vision & Mission","18.0",2,"H1",True,False,22.4,3,50.9
+"Chairman’s Message","18.0",3,"H1",True,False,22.4,2,50.9
+"Financial Highlights","18.0",4,"H1",True,False,22.4,2,50.9
+"Management Discussion and Analysis","18.0",5,"H1",True,False,22.4,5,50.9
+"Corporate Governance","18.0",6,"H1",True,False,22.4,2,50.9
+"Financial Statements","18.0",7,"H1",True,False,22.4,2,50.9
+"Independent Auditor’s Report","14.0",7,"H2",True,False,11.2,3,67.9
+"Balance Sheet","14.0",8,"H2",True,False,11.2,2,67.9
+"Statement of Income","14.0",9,"H2",True,False,11.2,3,67.9
+"Statement of Cash Flows","14.0",10,"H2",True,False,11.2,4,67.9
+"Notes to Financial Statements","14.0",11,"H2",True,False,11.2,4,67.9
+"STRATEGIC PLAN","36.0",1,"Title",True,True,0.0,2,205.1
+"2023-2027","24.0",1,"Body",True,True,28.0,1,257.1
+"Executive Summary","18.0",2,"H1",True,False,22.4,2,50.9
+"1. Introduction","16.0",3,"H1",True,False,14.0,2,50.9
+"1.1 Background","14.0",3,"H2",True,False,11.2,2,67.9
+"1.2 Mission, Vision, and Values","14.0",3,"H2",True,False,11.2,5,67.9
+"2. Strategic Goals and Objectives","16.0",4,"H1",True,False,14.0,5,50.9
+"2.1 Goal 1: Enhance Student Success","14.0",4,"H2",True,False,11.2,5,67.9
+"2.2 Goal 2: Strengthen Community Engagement","14.0",5,"H2",True,False,11.2,5,67.9
+"2.3 Goal 3: Foster Innovation and Research","14.0",6,"H2",True,False,11.2,6,67.9
+"3. Implementation Plan","16.0",7,"H1",True,False,14.0,3,50.9
+"4. Monitoring and Evaluation","16.0",8,"H1",True,False,14.0,4,50.9
+"Appendix A: SWOT Analysis","16.0",9,"H1",True,False,14.0,4,50.9
+"Quarterly Report","24.0",1,"Title",True,False,0.0,2,50.9
+"First Quarter 2024","18.0",1,"Body",False,False,16.8,3,50.9
+"Management’s Discussion and Analysis","16.0",2,"H1",True,False,14.0,5,50.9
+"Results of Operations","14.0",2,"H2",True,False,11.2,3,50.9
+"Liquidity and Capital Resources","14.0",3,"H2",True,False,11.2,4,50.9
+"Quantitative and Qualitative Disclosures About Market Risk","14.0",4,"H2",True,False,11.2,8,50.9
+"Condensed Consolidated Financial Statements","16.0",5,"H1",True,False,14.0,4,50.9
+"Condensed Consolidated Balance Sheets","14.0",5,"H2",True,False,11.2,4,50.9
+"Condensed Consolidated Statements of Operations","14.0",6,"H2",True,False,11.2,5,50.9
+"Condensed Consolidated Statements of Cash Flows","14.0",7,"H2",True,False,11.2,6,50.9
+"Notes to Condensed Consolidated Financial Statements","14.0",8,"H2",True,False,11.2,6,50.9
+"MARKET RESEARCH REPORT","28.0",1,"Title",True,True,0.0,3,157.1
+"1. Executive Summary","16.0",2,"H1",True,False,14.0,3,50.9
+"2. Market Overview","16.0",3,"H1",True,False,14.0,3,50.9
+"2.1 Market Size and Growth","14.0",3,"H2",True,False,11.2,5,67.9
+"2.2 Key Market Trends","14.0",4,"H2",True,False,11.2,4,67.9
+"3. Competitive Landscape","16.0",5,"H1",True,False,14.0,3,50.9
+"3.1 Competitor Analysis","14.0",5,"H2",True,False,11.2,3,67.9
+"3.2 SWOT Analysis","14.0",6,"H2",True,False,11.2,3,67.9
+"4. Customer Analysis","16.0",7,"H1",True,False,14.0,3,50.9
+"5. Market Forecast","16.0",8,"H1",True,False,14.0,3,50.9
+"6. Recommendations","16.0",9,"H1",True,False,14.0,2,50.9
+"Appendix","16.0",10,"H1",True,False,14.0,1,50.9
+"BUSINESS PROPOSAL","36.0",1,"Title",True,False,0.0,2,50.9
+"1. Introduction","16.0",2,"H1",True,False,14.0,2,50.9
+"2. Problem Statement","16.0",2,"H1",True,False,14.0,3,50.9
+"3. Proposed Solution","16.0",3,"H1",True,False,14.0,3,50.9
+"4. Market Analysis","16.0",4,"H1",True,False,14.0,3,50.9
+"5. Marketing and Sales Strategy","16.0",5,"H1",True,False,14.0,5,50.9
+"6. Management Team","16.0",6,"H1",True,False,14.0,3,50.9
+"7. Financial Projections","16.0",7,"H1",True,False,14.0,3,50.9
+"8. Appendix","16.0",8,"H1",True,False,14.0,2,50.9
+"PROJECT CHARTER","28.0",1,"Title",True,True,0.0,2,214.3
+"1. Project Summary","14.0",2,"H1",True,False,11.2,3,50.9
+"1.1 Project Name","12.0",2,"H2",True,False,8.4,3,67.9
+"1.2 Project Sponsor","12.0",2,"H2",True,False,8.4,3,67.9
+"1.3 Project Manager","12.0",3,"H2",True,False,8.4,3,67.9
+"2. Project Goals and Objectives","14.0",3,"H1",True,False,11.2,5,50.9
+"3. Scope","14.0",4,"H1",True,False,11.2,1,50.9
+"4. Key Deliverables","14.0",4,"H1",True,False,11.2,2,50.9
+"5. Stakeholders","14.0",5,"H1",True,False,11.2,1,50.9
+"6. Budget","14.0",5,"H1",True,False,11.2,1,50.9
+"7. Timeline","14.0",6,"H1",True,False,11.2,1,50.9
+"8. Assumptions and Constraints","14.0",6,"H1",True,False,11.2,4,50.9
+"9. Risks","14.0",7,"H1",True,False,11.2,1,50.9
+"10. Approval","14.0",7,"H1",True,False,11.2,2,50.9
+"CASE STUDY","28.0",1,"Title",True,True,0.0,2,248.6
+"1. Introduction","14.0",2,"H1",True,False,11.2,2,50.9
+"2. Background","14.0",2,"H1",True,False,11.2,2,50.9
+"3. Challenges","14.0",3,"H1",True,False,11.2,2,50.9
+"4. Solution","14.0",3,"H1",True,False,11.2,2,50.9
+"5. Results","14.0",4,"H1",True,False,11.2,2,50.9
+"6. Conclusion","14.0",4,"H1",True,False,11.2,2,50.9
+"7. Future Recommendations","14.0",5,"H1",True,False,11.2,3,50.9
+"Application form for grant of LTC advance","12.0",1,"Title",True,False,0.0,7,180.1
+"1.","11.0",1,"Body",False,False,23.3,1,89.1
+"Name of the Government Servant","11.0",1,"Body",False,False,0.0,5,153.2
+"2.","11.0",1,"Body",False,False,2.7,1,89.1
+"Designation","11.0",1,"Body",False,False,0.0,1,153.2
+"3.","11.0",1,"Body",False,False,2.7,1,89.1
+"Date of entering the Central Government","11.0",1,"Body",False,False,0.0,6,153.2
+"Service","11.0",1,"Body",False,False,2.8,1,164.2
+"4.","11.0",1,"Body",False,False,2.7,1,89.1
+"$PAY+SI+NPA$","11.0",1,"Body",False,False,0.0,1,153.2
+"5.","11.0",1,"Body",False,False,2.7,1,89.1
+"Whether permanent or temporary","11.0",1,"Body",False,False,0.0,4,153.2
+"6.","11.0",1,"Body",False,False,16.8,1,89.1
+"Home Town as recorded in the Service Book","11.0",1,"Body",False,False,0.0,8,153.2
+"7.","11.0",1,"Body",False,False,16.8,1,89.1
+"Whether wife / husband is employed and if","11.0",1,"Body",False,False,0.0,8,153.2
+"so whether entitled to LTC","11.0",1,"Body",False,False,2.8,5,164.2
+"8.","11.0",1,"Body",False,False,2.7,1,89.1
+"Whether the concession is to be availed for","11.0",1,"Body",False,False,0.0,8,153.2
+"visiting home town and if so block for which","11.0",1,"Body",False,False,2.8,9,164.2
+"LTC is to be availed.","11.0",1,"Body",False,False,2.8,5,164.2
+"9.","11.0",1,"Body",False,False,2.7,1,89.1
+"(a) If the concession is to visit anywhere in","11.0",1,"Body",False,False,0.0,9,153.2
+"India, the place to be visited.","11.0",1,"Body",False,False,2.8,6,168.2
+"(b) Block for which to be availed.","11.0",1,"Body",False,False,13.9,6,164.2
+"Single rail fare/bus fare from the","11.0",1,"Body",False,False,2.7,6,153.2
+"10.","11.0",1,"Body",False,False,0.0,1,89.1
+"headquarters to home town/place of visit by","11.0",1,"Body",False,False,0.0,8,153.2
+"shortest route.","11.0",1,"Body",False,False,2.8,2,164.2
+"Persons in respect of whom LTC is proposed to be availed.","11.0",1,"Body",True,False,5.5,11,189.2
+"Name","11.0",1,"Body",True,False,5.5,1,163.2
+"S.No","11.0",1,"Body",True,False,0.0,1,96.1
+"Age","11.0",1,"Body",True,False,0.0,1,288.1
+"Relationship","11.0",1,"Body",True,False,0.0,1,388.0
+"1.","11.0",1,"Body",False,False,5.5,1,100.1
+"2.","11.0",1,"Body",False,False,13.9,1,100.1
+"11.","11.0",1,"Body",False,False,0.0,1,89.1
+"3.","11.0",1,"Body",False,False,0.0,1,100.1
+"4.","11.0",1,"Body",False,False,13.9,1,100.1
+"5.","11.0",1,"Body",False,False,13.9,1,100.1
+"6.","11.0",1,"Body",False,False,13.9,1,100.1
+"12.","11.0",1,"Body",False,False,2.7,1,89.1
+"Amount of advance required.","11.0",1,"Body",False,False,0.0,4,153.2
+"Rs.","11.0",1,"Body",False,False,0.0,1,364.6
+"I declare that the particulars furnished above are true and correct to the best of my knowledge.","11.0",1,"Body",False,False,19.4,17,105.1
+"I undertake to produce the tickets for the outward journey within ten days of receipt of the advance.","11.0",1,"Body",False,False,10.9,19,105.1
+"In the event of cancellation of the journey or if I fail to produce the tickets within ten days of receipt of","11.0",1,"Body",False,False,10.9,21,105.1
+"advance, I undertake to refund the entire advance in one lump sum.","11.0",1,"Body",False,False,2.8,13,105.1
+"Date","11.0",1,"Body",True,False,10.9,1,105.1
+"Signature of Government Servant.","11.0",1,"Body",True,False,0.0,4,432.1
+"Overview","18.0",1,"Title",False,False,0.0,1,343.4
+"Foundation Level Extensions","18.0",1,"Title",False,False,11.3,3,272.8
+"Version 1.0","12.0",1,"Body",False,False,23.3,2,402.0
+"International Software Testing Qualifications Board","12.0",1,"Body",False,False,122.3,5,153.2
+"Copyright Notice","10.0",1,"Body",True,False,101.9,2,83.9
+"This document may be copied in its entirety, or extracts made, if the source is acknowledged.","8.0",1,"Body",False,False,11.5,16,83.9
+"Revision History","14.0",3,"H1",True,False,59.3,2,298.5
+"Version","8.0",3,"Body",True,False,10.0,1,102.3
+"Date","8.0",3,"Body",True,False,0.0,1,219.8
+"Remarks","8.0",3,"Body",True,False,0.0,1,387.9
+"0.1","8.0",3,"Body",False,False,2.7,1,114.7
+"18 JUNE 2013","8.0",3,"Body",False,False,0.0,3,198.8
+"Initial version","8.0",3,"Body",False,False,0.0,2,381.1
+"0.2","8.0",3,"Body",False,False,2.7,1,114.7
+"23 JULY 2013","8.0",3,"Body",False,False,0.0,3,198.8
+"WG reviewed and confirmed","8.0",3,"Body",False,False,0.0,4,357.7
+"0.3","8.0",3,"Body",False,False,2.7,1,114.7
+"6 NOV 2013","8.0",3,"Body",False,False,0.0,3,202.6
+"amended population and diagram","8.0",3,"Body",False,False,0.0,4,342.3
+"0.7","8.0",3,"Body",False,False,2.7,1,114.7
+"11 DEC 2013","8.0",3,"Body",False,False,0.0,3,199.5
+"Amended Business Outcomes and Chapters matching","8.0",3,"Body",False,False,0.0,6,307.7
+"0.8","8.0",3,"Body",False,False,2.7,1,114.7
+"20 DEC 2013","8.0",3,"Body",False,False,0.0,3,199.5
+"Working group updates on 0.7","8.0",3,"Body",False,False,0.0,5,354.3
+"1.0","8.0",3,"Body",False,False,2.7,1,114.7
+"31 MAY 2014","8.0",3,"Body",False,False,0.0,3,201.2
+"GA release for Agile Extension","8.0",3,"Body",False,False,0.0,5,354.3
+"Table of Contents","14.0",4,"H1",True,False,59.3,3,293.4
+"1. Introduction to the Foundation Level Extensions","14.0",6,"H1",True,False,143.6,7,124.7
+"This overview document is intended for anyone with an interest in the ISTQB Foundation Level","9.0",6,"Body",False,False,10.0,16,83.9
+"Extensions who wants a high-level introduction to the leading principles and an overview of the individual","9.0",6,"Body",False,False,2.7,17,83.9
+"extension syllabi.","9.0",6,"Body",False,False,2.7,2,83.9
+"From time to time, ISTQB will update this document to reflect any additional extensions that shall be","9.0",6,"Body",False,False,5.4,17,83.9
+"introduced for the Foundation Level, or to reflect major changes in existing ones.","9.0",6,"Body",False,False,2.7,13,83.9
+"2. Introduction to Foundation Level Agile Tester Extension","14.0",7,"H1",True,False,143.6,7,124.7
+"The certification for Foundation Level Extension Agile Tester is designed for professionals who are","9.0",7,"Body",False,False,10.0,15,83.9
+"working within Agile environments.","9.0",7,"Body",False,False,2.7,4,83.9
+"It is also for professionals who are planning to start implementing","9.0",7,"Body",False,False,5.4,10,83.9
+"Agile methods in the near future, or are working within companies that plan to do so, The certification","9.0",7,"Body",False,False,2.7,19,83.9
+"provides an advantage for those who would like to know the required Agile activities, roles, methods, and","9.0",7,"Body",False,False,2.7,19,83.9
+"methodologies specific to their role.","9.0",7,"Body",False,False,2.7,5,83.9
+"2.1 Intended Audience","12.0",7,"H2",True,False,5.4,3,83.9
+"The Foundation Level Extension - Agile Tester qualification is aimed at four main groups of professionals:","9.0",7,"Body",False,False,5.4,17,83.9
+"1. Professionals who have achieved in-depth testing experience in traditional methods and would","9.0",7,"Body",False,False,5.4,14,83.9
+"like to get an Agile Tester Certificate.","9.0",7,"Body",False,False,2.7,6,94.9
+"2. Junior professional testers who are just starting in the testing profession, have received the","9.0",7,"Body",False,False,5.4,16,83.9
+"Foundation Level certificate, and would like to know more about the tester's role in an Agile","9.0",7,"Body",False,False,2.7,18,94.9
+"environment.","9.0",7,"Body",False,False,2.7,1,94.9
+"3. Professionals who are relatively new to testing and are required to implement test approaches,","9.0",7,"Body",False,False,5.4,16,83.9
+"methods and techniques in their day to day job in Agile projects.","9.0",7,"Body",False,False,2.7,11,94.9
+"4. Professionals who are experienced in their role (including unit testing) and need more","9.0",7,"Body",False,False,5.4,14,83.9
+"understanding and knowledge about how to perform and manage testing on all levels in Agile","9.0",7,"Body",False,False,2.7,17,94.9
+"projects.","9.0",7,"Body",False,False,2.7,1,94.9
+"These professionals include people who are in roles such as testers, test analysts, test engineers, test","9.0",7,"Body",False,False,5.4,17,83.9
+"consultants, test managers, user acceptance testers, and software developers.","9.0",7,"Body",False,False,2.7,10,83.9
+"2.2 Career Paths for Testers","12.0",7,"H2",True,False,5.4,5,83.9
+"Building on the Foundation Level, the Agile Tester Extension supports the definition of career paths for","9.0",7,"Body",False,False,5.4,17,83.9
+"professional testers.","9.0",7,"Body",False,False,2.7,2,83.9
+"A person with the Agile Tester certificate has extended the broad understanding of","9.0",7,"Body",False,False,5.4,13,83.9
+"testing acquired at the Foundation Level to enable him or her to work effectively as a professional tester in","9.0",7,"Body",False,False,2.7,20,83.9
+"an Agile project.","9.0",7,"Body",False,False,2.7,3,83.9
+"People possessing an ISTQB Foundation Level Extension - Agile Tester certificate may use the Certified","9.0",7,"Body",False,False,5.4,17,83.9
+"Tester Foundation Level acronym CTFL-AT.","9.0",7,"Body",False,False,2.7,6,83.9
+"2.3 Learning Objectives","12.0",7,"H2",True,False,23.3,3,83.9
+"In general, the Foundation Level syllabus is examinable at a K1 level, i.e., the candidate will recognize,","9.0",7,"Body",False,False,5.4,18,83.9
+"remember and recall terms and concepts stated in the Foundation Level syllabus.","9.0",7,"Body",False,False,2.7,13,83.9
+"In addition, all Foundation Level syllabus learning objectives are examinable at the same K- level in an","9.0",7,"Body",False,False,5.4,18,83.9
+"extension exam.","9.0",7,"Body",False,False,2.7,2,83.9
+"That said, each extension level exam focuses on the learning objectives defined in that extension","9.0",8,"Body",False,False,5.4,16,83.9
+"syllabus.","9.0",8,"Body",False,False,2.7,1,83.9
+"The relevant learning objectives at K1, K2, and K3 levels are provided at the beginning of each","9.0",8,"Body",False,False,5.4,18,83.9
+"chapter within each particular extension syllabus.","9.0",8,"Body",False,False,2.7,7,83.9
+"2.4 Entry Requirements","12.0",8,"H2",True,False,35.4,3,83.9
+"To be able to participate in a Foundation Level Extension Agile Tester exam, candidates must have","9.0",8,"Body",False,False,5.4,18,83.9
+"obtained the ISTQB Foundation Level certificate.","9.0",8,"Body",False,False,2.7,7,83.9
+"2.5 Structure and Course Duration","12.0",8,"H2",True,False,5.4,5,83.9
+"The Foundation Level Extension Agile Tester syllabus has no shared or common elements with the","9.0",8,"Body",False,False,5.4,17,83.9
+"Foundation Level syllabus.","9.0",8,"Body",False,False,2.7,4,83.9
+"The syllabi must be taught in the following minimum number of days:","9.0",8,"Body",False,False,5.4,11,83.9
+"2.6 Keeping It Current","12.0",9,"H2",True,False,122.3,4,83.9
+"The software industry changes rapidly. To deal with these changes and to provide the stakeholders with","9.0",9,"Body",False,False,5.4,18,83.9
+"access to relevant and current information, the ISTQB working groups have created links on the","9.0",9,"Body",False,False,2.7,18,83.9
+"www.istqb.org web site which refer to supporting documents, changes to standards and new occurrences","9.0",9,"Body",False,False,2.7,18,83.9
+"in the industry.","9.0",9,"Body",False,False,2.7,3,83.9
+"This information is not examinable under this syllabus.","9.0",9,"Body",False,False,5.4,8,83.9
+"3. Overview of the Foundation Level Extension – Agile TesterSyllabus","14.0",10,"H1",True,False,143.6,10,124.7
+"3.1 Business Outcomes","12.0",10,"H2",True,False,5.4,3,83.9
+"This section lists the Business Outcomes expected of a candidate who has achieved the Foundation Level","9.0",10,"Body",False,False,5.4,18,83.9
+"Extension - Agile Tester certification.","9.0",10,"Body",False,False,2.7,5,83.9
+"An Agile Tester can...","9.0",10,"Body",False,False,5.4,4,83.9
+"AFM1 Collaborate in a cross-functional Agile team being familiar with principles and basic","9.0",10,"Body",False,False,5.4,14,83.9
+"practices of Agile software development.","9.0",10,"Body",False,False,2.7,5,94.9
+"AFM2 Adapt existing testing experience and knowledge to Agile values and principles.","9.0",10,"Body",False,False,5.4,12,83.9
+"AFM3 Support the Agile team in planning test-related activities.","9.0",10,"Body",False,False,5.4,9,83.9
+"AFM4 Apply relevant methods and techniques for testing in an Agile project.","9.0",10,"Body",False,False,5.4,12,83.9
+"AFM5 Assist the Agile team in test automation activities.","9.0",10,"Body",False,False,5.4,9,83.9
+"AFM6 Assist business stakeholders in defining understandable and testable user stories,","9.0",10,"Body",False,False,5.4,13,83.9
+"scenarios, requirements and acceptance criteria as appropriate.","9.0",10,"Body",False,False,2.7,8,94.9
+"AFM7 Work and share information with other team members using effective communication","9.0",10,"Body",False,False,5.4,13,83.9
+"styles and channels.","9.0",10,"Body",False,False,2.7,3,94.9
+"In general, a Certified Tester Foundation Level - Agile Tester is expected to have acquired the necessary","9.0",10,"Body",False,False,5.4,18,83.9
+"skills to working effectively within an Agile team and environment.","9.0",10,"Body",False,False,2.7,10,83.9
+"3.2 Content","12.0",10,"H2",True,False,5.4,2,83.9
+"Chapter 1: Agile Software Development","9.0",10,"Body",False,False,5.4,5,83.9
+"The tester should remember the basic concept of Agile software development based on the Agile","9.0",10,"Body",False,False,2.7,16,83.9
+"Manifesto.","9.0",10,"Body",False,False,2.7,1,94.9
+"The tester should understand the advantages of the whole-team approach and the benefits of","9.0",10,"Body",False,False,5.4,16,83.9
+"early and frequent feedback.","9.0",10,"Body",False,False,2.7,4,94.9
+"The tester should recall Agile software development approaches.","9.0",10,"Body",False,False,5.4,8,83.9
+"The tester should be able to write testable user stories in collaboration with developers and","9.0",10,"Body",False,False,5.4,16,83.9
+"business representatives.","9.0",10,"Body",False,False,2.7,2,94.9
+"The tester should understand how retrospectives can be used as a mechanism for process","9.0",10,"Body",False,False,5.4,16,83.9
+"improvement in Agile projects.","9.0",10,"Body",False,False,2.7,4,94.9
+"The tester should understand the use and purpose of continuous integration.","9.0",10,"Body",False,False,5.4,11,83.9
+"The tester should know the differences between iteration and release planning, and how a tester","9.0",10,"Body",False,False,5.4,17,83.9
+"adds value in each of these activities.","9.0",10,"Body",False,False,2.7,7,94.9
+"Chapter 2: Fundamental Agile Testing Principles, Practices, and Processes","9.0",11,"Body",False,False,5.4,9,83.9
+"The tester should be able to describe the differences between testing activities in Agile projects","9.0",11,"Body",False,False,2.7,17,83.9
+"and non-Agile projects.","9.0",11,"Body",False,False,2.7,3,94.9
+"The tester should be able to describe how development and testing activities are integrated in","9.0",11,"Body",False,False,5.4,16,83.9
+"Agile projects.","9.0",11,"Body",False,False,2.7,2,94.9
+"The tester should be able to describe the role of independent testing in Agile projects.","9.0",11,"Body",False,False,5.4,15,83.9
+"The tester should be able to describe the tools and techniques used to communicate the status of","9.0",11,"Body",False,False,5.4,18,83.9
+"testing in an Agile project, including test progress and product quality.","9.0",11,"Body",False,False,2.7,11,94.9
+"The tester should be able to describe the process of evolving tests across multiple iterations and","9.0",11,"Body",False,False,5.4,17,83.9
+"explain why test automation is important to manage regression risk in Agile projects.","9.0",11,"Body",False,False,2.7,14,94.9
+"The tester should understand the skills (people, domain, and testing) of a tester in an Agile team.","9.0",11,"Body",False,False,5.4,18,83.9
+"The tester should be able to understand the role of a tester within an Agile team.","9.0",11,"Body",False,False,5.4,16,83.9
+"Chapter 3: Agile Testing Methods, Techniques, and Tools","9.0",11,"Body",False,False,5.4,9,83.9
+"The tester should be able to recall the concepts of test-driven development, acceptance test-","9.0",11,"Body",False,False,2.7,15,83.9
+"driven development, and behavior-driven development.","9.0",11,"Body",False,False,2.7,6,94.9
+"The tester should be able to recall the concepts of the test pyramid.","9.0",11,"Body",False,False,5.4,12,83.9
+"The tester should be able to summarize the testing quadrants and their relationships with testing","9.0",11,"Body",False,False,5.4,16,83.9
+"levels and testing types.","9.0",11,"Body",False,False,2.7,4,94.9
+"For a given Agile project, the tester should be able to work as a tester in a Scrum team.","9.0",11,"Body",False,False,5.4,18,83.9
+"The tester should be able to assess quality risks within an Agile project.","9.0",11,"Body",False,False,5.4,13,83.9
+"The tester should be able to estimate testing effort based on iteration content and quality risks.","9.0",11,"Body",False,False,5.4,17,83.9
+"The tester should be able to interpret relevant information to support testing activities.","9.0",11,"Body",False,False,5.4,12,83.9
+"The tester should be able to explain to business stakeholders how to define testable acceptance","9.0",11,"Body",False,False,5.4,17,83.9
+"criteria.","9.0",11,"Body",False,False,2.7,1,94.9
+"Given a user story, the tester should be able to write acceptance test-driven development test","9.0",11,"Body",False,False,5.4,16,83.9
+"cases.","9.0",11,"Body",False,False,2.7,1,94.9
+"For both functional and non-functional behavior, the tester should be able to write test cases using","9.0",11,"Body",False,False,5.4,18,83.9
+"black box test design techniques based on given user stories.","9.0",11,"Body",False,False,2.7,10,94.9
+"The tester should be able to perform exploratory testing to support the testing of an Agile project.","9.0",11,"Body",False,False,5.4,18,83.9
+"The tester should be able to recall different tools available to testers according to their purpose","9.0",11,"Body",False,False,5.4,17,83.9
+"and to activities in Agile projects.","9.0",11,"Body",False,False,2.7,6,94.9
+"4. References","14.0",12,"H1",True,False,143.6,2,324.9
+"4.1 Trademarks","12.0",12,"H2",True,False,5.4,2,83.9
+"The following registered trademarks and service marks are used in this document:","9.0",12,"Body",False,False,5.4,12,83.9
+"ISTQB® is a registered trademark of the International Software Testing Qualifications Board","9.0",12,"Body",False,False,5.4,13,83.9
+"4.2 Documents and Web Sites","12.0",12,"H2",True,False,5.4,5,83.9
+"Identifier","9.0",12,"Body",False,False,5.4,1,83.9
+"[ISTQB-Web]","9.0",12,"Body",False,False,2.7,1,83.9
+"Reference","9.0",12,"Body",False,False,2.7,1,349.0
+"Web site of the International Software Testing Qualifications Board. Refer","9.0",12,"Body",False,False,5.4,11,349.0
+"to this website for the latest ISTQB Glossary and Syllabi.","9.0",12,"Body",False,False,2.7,9,349.0
+"(www.istqb.org)","9.0",12,"Body",False,False,5.4,1,349.0
+"RFP:Request for Proposal To Present a Proposal for Developing the Business Plan for the Ontario Digital Library","18.0",1,"Title",True,False,24.1,19,158.4
+"The Ontario Digital Library will make Ontario a better place to study, work and live by ensuring that","10.0",1,"Body",False,False,182.0,18,64.2
+"all Ontario citizens have access to the knowledge and learning supports needed to be life-long","10.0",1,"Body",False,False,2.7,15,64.2
+"learners and effective contributors towards Ontario's prosperity.","10.0",1,"Body",False,False,2.7,8,64.2
+"Ontario’s Digital Library","18.0",2,"H1",True,False,35.4,3,313.1
+"A Critical Component for Implementing Ontario’s Road Map to Prosperity Strategy","12.0",2,"H1",True,False,7.2,12,217.4
+"Summary","14.0",2,"H2",True,False,24.3,1,64.2
+"The purpose of this Request for Proposal (RFP) is to invite firms and/or consultants to","10.0",2,"Body",False,False,8.3,15,64.2
+"present a proposal for developing the business plan for the Ontario Digital Library (ODL).","10.0",2,"Body",False,False,2.7,15,64.2
+"The ODL will deliver high-quality library electronic content to all Ontario residents in order to","10.0",2,"Body",False,False,5.5,16,64.2
+"assist people as they learn, work, and enhance their quality of life.","10.0",2,"Body",False,False,2.7,12,64.2
+"The business plan to be","10.0",2,"Body",False,False,5.5,4,64.2
+"developed is to document and clearly communicate:","10.0",2,"Body",False,False,2.7,6,64.2
+"how the ODL will be implemented, including the timeline","10.0",2,"Body",False,False,2.7,8,75.2
+"the financial plan for the implementation","10.0",2,"Body",False,False,2.7,6,75.2
+"the financial plan for the first 2 operating years, including capital and operating costs,","10.0",2,"Body",False,False,2.7,14,75.2
+"revenues, etc.","10.0",2,"Body",False,False,2.7,2,75.2
+"a financial forecast for the succeeding 2 operating years","10.0",2,"Body",False,False,2.7,9,75.2
+"the services and products to be delivered by the ODL","10.0",2,"Body",False,False,2.7,9,75.2
+"how the ODL will operate and be managed following the implementation","10.0",2,"Body",False,False,2.7,11,75.2
+"who will be involved, and what their role/responsibility will be, for both the","10.0",2,"Body",False,False,2.7,13,75.2
+"implementation and operational stages","10.0",2,"Body",False,False,2.7,4,75.2
+"the marketing and communications plan for the ODL","10.0",2,"Body",False,False,2.7,8,75.2
+"This business plan must be completed and approved by the ODL Steering Committee no","10.0",2,"Body",False,False,2.7,15,64.2
+"later than September 30, 2003","10.0",2,"Body",False,False,2.7,5,64.2
+"Timeline:","12.0",2,"H3",True,False,5.5,1,64.2
+"Those firms/consultants intended to submit a proposal to this RFP must indicate their","10.0",2,"Body",False,False,2.7,13,64.2
+"intention to do so in an e-mail to Michael Ridley (mridley@uoguelph.ca) by April 11th.","10.0",2,"Body",False,False,2.7,15,64.2
+"Proposals may be e-mailed, mailed, couriered or faxed to: Larry Moore","10.0",2,"Body",False,False,5.5,11,64.2
+"(Imoore@accessola.com), Executive Director, The Ontario Library Association, 100 Lombard","10.0",2,"Body",False,False,2.7,12,64.2
+"St., Suite 303, Toronto, ON M5C 1M3.","10.0",2,"Body",False,False,2.7,7,64.2
+"Proposals must be received by Noon on Monday,","10.0",2,"Body",False,False,5.5,8,64.2
+"April 21, 2003.","10.0",2,"Body",False,False,2.7,3,64.2
+"Those proposals that are short-listed will be invited to discuss their proposal during the week","10.0",2,"Body",False,False,5.5,16,64.2
+"of April 28, 2003. No presentation will be expected.","10.0",2,"Body",False,False,2.7,8,64.2
+"Firms or consultants invited to an","10.0",2,"Body",False,False,5.5,5,64.2
+"interview will be expected to discuss the project and their approach with the selection","10.0",2,"Body",False,False,2.7,14,64.2
+"committee.","10.0",2,"Body",False,False,2.7,1,64.2
+"Contracts with the firm/consultant will be signed the week of May 5, 2003 with the work to","10.0",2,"Body",False,False,5.5,17,64.2
+"commence as soon as possible thereafter.","10.0",2,"Body",False,False,2.7,6,64.2
+"Background","14.0",3,"H2",True,False,5.5,1,64.2
+"First, some background on the ODL. For the last two years the Ontario Library Association","10.0",3,"Body",False,False,8.3,16,64.2
+"has acted as a catalyst, bringing together the stakeholders needed to create the Ontario","10.0",3,"Body",False,False,2.7,15,64.2
+"Digital Library (ODL).","10.0",3,"Body",False,False,2.7,3,64.2
+"These stakeholders include Ontario's 5000+ public libraries, university,","10.0",3,"Body",False,False,5.5,8,64.2
+"college, and school libraries, as well as Ontario government ministries.","10.0",3,"Body",False,False,2.7,9,64.2
+"Libraries that serve very different clientele recognize that by working together they can create","10.0",3,"Body",False,False,5.5,16,64.2
+"seamless access to quality electronic library services.","10.0",3,"Body",False,False,2.7,7,64.2
+"Through the ODL, students will be","10.0",3,"Body",False,False,5.5,5,64.2
+"able to explore a topic at school, use the same child-safe resources after school (either at","10.0",3,"Body",False,False,2.7,17,64.2
+"home or at a public library), enter college or university with a knowledge of how to use","10.0",3,"Body",False,False,2.7,17,64.2
+"electronic resources that are still available and then, after graduation, continue to use these","10.0",3,"Body",False,False,2.7,16,64.2
+"skills and resources at work or at home.","10.0",3,"Body",False,False,2.7,8,64.2
+"We are moving into a period of convergence. With convergence we no longer have to license","10.0",3,"Body",False,False,5.5,16,64.2
+"commercial products as individual libraries or institutions.","10.0",3,"Body",False,False,2.7,7,64.2
+"We can work together to spend our","10.0",3,"Body",False,False,5.5,6,64.2
+"money wisely. The provincial government has made this possible by working hard to provide","10.0",3,"Body",False,False,2.7,16,64.2
+"all Ontarians with a stable, high-speed communications infrastructure.","10.0",3,"Body",False,False,2.7,8,64.2
+"Equitable access for all Ontarians:","10.0",4,"H3",True,False,5.5,5,64.2
+"We will bring consistent, high-quality electronic resources and services to 10 million","10.0",4,"Body",False,False,2.7,13,75.2
+"Ontario citizens","10.0",4,"Body",False,False,2.7,2,75.2
+"We will eliminate barriers to the access to information and create more consistent","10.0",4,"Body",False,False,2.7,13,75.2
+"services for library clients.","10.0",4,"Body",False,False,2.7,4,75.2
+"Shared decision-making and accountability:","10.0",4,"H3",True,False,5.5,4,64.2
+"We will facilitate consensus among members regarding ODL's portfolio of electronic","10.0",4,"Body",False,False,2.7,12,75.2
+"licenses and services","10.0",4,"Body",False,False,2.7,3,75.2
+"We will balance the interests and realities of small and large as well as rich and poor","10.0",4,"Body",False,False,2.7,17,75.2
+"communities and institutions.","10.0",4,"Body",False,False,2.7,3,75.2
+"Shared governance structure:","10.0",4,"H3",True,False,5.5,3,64.2
+"We will share decision-making in order to enable the people we serve.","10.0",4,"Body",False,False,2.7,11,75.2
+"We will work based on an underlying assumption of trust and synergy.","10.0",4,"Body",False,False,2.7,11,75.2
+"Shared funding:","10.0",4,"H3",True,False,5.5,2,64.2
+"We will leverage provincial, institutional, and local dollars to realize economies of scale","10.0",4,"Body",False,False,2.7,14,75.2
+"and put Ontario dollars to work for everyone.","10.0",4,"Body",False,False,2.7,8,75.2
+"We will be willing to pool talents and dollars in order to provide common services that are","10.0",4,"Body",False,False,2.7,18,75.2
+"truly greater than those that can be maintained by individual institutions.","10.0",4,"Body",False,False,2.7,11,75.2
+"Local points of entry:","10.0",5,"H3",True,False,35.4,4,64.2
+"We will provide the licenses, infrastructure, services and support that enable local","10.0",5,"Body",False,False,2.7,12,75.2
+"libraries to provide exceptional services to their clientele.","10.0",5,"Body",False,False,2.7,8,75.2
+"What could the ODL really mean?","12.0",5,"H3",True,False,5.5,6,64.2
+"For each Ontario citizen it could mean:","10.0",5,"H4",True,False,5.5,7,64.2
+"One local point of entry to access seamless electronic library services and","10.0",5,"Body",False,False,2.7,12,75.2
+"resources for their personal, educational and professional needs;","10.0",5,"Body",False,False,2.7,8,75.2
+"Access to credible, high-quality, user-friendly electronic services through their","10.0",5,"Body",False,False,5.5,10,75.2
+"community, school, or academic library;","10.0",5,"Body",False,False,2.7,5,75.2
+"Confidence that the electronic services and sources they - and their children","10.0",5,"Body",False,False,5.5,12,75.2
+"are using are safe, valid, and bringing them both global and local","10.0",5,"Body",False,False,2.7,12,75.2
+"perspectives;","10.0",5,"Body",False,False,2.7,1,75.2
+"Electronic information and tools that enhance job skills and the learning","10.0",5,"Body",False,False,5.5,11,75.2
+"experience","10.0",5,"Body",False,False,2.7,1,75.2
+"For each Ontario student it could mean:","10.0",5,"H4",True,False,5.5,7,64.2
+"One local point of entry to quality, curriculum- based electronic information","10.0",5,"Body",False,False,2.7,10,75.2
+"resources and services","10.0",5,"Body",False,False,2.7,3,75.2
+"Connection to their individual educational environment, whether at the","10.0",5,"Body",False,False,5.5,9,75.2
+"elementary, secondary or post-secondary levels","10.0",5,"Body",False,False,2.7,5,75.2
+"For each Ontario library it could mean:","10.0",6,"H4",True,False,5.5,7,64.2
+"One point of entry for themselves and their clientele to quality electronic","10.0",6,"Body",False,False,2.7,12,75.2
+"resources and services that support and enhance their collections, programs","10.0",6,"Body",False,False,2.7,10,75.2
+"and services","10.0",6,"Body",False,False,2.7,2,75.2
+"The opportunity to show case their local community, collections, services, and","10.0",6,"Body",False,False,5.5,11,75.2
+"expertise","10.0",6,"Body",False,False,2.7,1,75.2
+"The opportunity to gain from the provincial, collaborative partnership in order","10.0",6,"Body",False,False,5.5,11,75.2
+"to provide a seamless gateway to digital resources and services","10.0",6,"Body",False,False,2.7,10,75.2
+"For the Ontario government it could mean:","10.0",6,"H4",True,False,5.5,7,64.2
+"A point of entry to information services and resources for all Ontario citizens,","10.0",6,"Body",False,False,2.7,13,75.2
+"connecting to portal initiatives.","10.0",6,"Body",False,False,2.7,4,75.2
+"Support of the Ontario E-Learning strategy through a collaborative digital","10.0",6,"Body",False,False,5.5,10,75.2
+"library initiative that positions Ontario on the global e-learning scene","10.0",6,"Body",False,False,2.7,10,75.2
+"The Business Plan to be Developed","12.0",6,"H2",True,False,5.5,6,316.4
+"Specifically, the business plan must include:","10.0",6,"Body",False,False,5.5,6,64.2
+"how the ODL will be implemented, including the timeline","10.0",6,"Body",False,False,2.7,8,75.2
+"the financial plan for the implementation","10.0",6,"Body",False,False,2.7,6,75.2
+"the financial plan for the first 2 operating years, including capital and operating costs,","10.0",6,"Body",False,False,2.7,14,75.2
+"revenues, etc.","10.0",6,"Body",False,False,2.7,2,75.2
+"a financial forecast for the succeeding 2 operating years","10.0",6,"Body",False,False,2.7,9,75.2
+"the services and products to be delivered by the ODL","10.0",6,"Body",False,False,2.7,9,75.2
+"how the ODL will operate and be managed following the implementation","10.0",6,"Body",False,False,2.7,11,75.2
+"who will be involved, and what their role/responsibility will be, for both the","10.0",6,"Body",False,False,2.7,13,75.2
+"implementation and operational stages","10.0",6,"Body",False,False,2.7,4,75.2
+"Milestones","12.0",7,"H3",True,False,5.5,1,332.2
+"1) A preliminary report will be issued during June 2003.","10.0",7,"Body",False,False,2.7,9,64.2
+"2) It is expected that an Interim Report, suitable for distribution to the broader library","10.0",7,"Body",False,False,2.7,15,64.2
+"community will be available by August 1, 2003 and that there will be an opportunity","10.0",7,"Body",False,False,2.7,16,75.2
+"for responses to be evaluated.","10.0",7,"Body",False,False,2.7,5,75.2
+"3) The business plan must be completed and approved by the ODL Steering Committee","10.0",7,"Body",False,False,2.7,15,64.2
+"no later than September 30, 2003.","10.0",7,"Body",False,False,2.7,5,75.2
+"Approach and Specific Proposal Requirements","12.0",7,"H2",True,False,5.5,5,263.8
+"The proposal should include the following information:","10.0",7,"Body",False,False,5.5,7,64.2
+"a) name of the firm/consultant","10.0",7,"Body",False,False,2.7,5,64.2
+"b) names of those individuals who will be engaged in this project, their specific","10.0",7,"Body",False,False,2.7,13,64.2
+"responsibilities on this project and relevant experience/qualifications","10.0",7,"Body",False,False,2.7,7,75.2
+"c) description of similar engagements that highlight the firm's experience in business","10.0",7,"Body",False,False,2.7,12,64.2
+"planning and building stakeholder commitment","10.0",7,"Body",False,False,2.7,5,75.2
+"d) references with details of work completed for these references","10.0",7,"Body",False,False,2.7,9,64.2
+"e) description of the approach that will be used for completing the business plan,","10.0",7,"Body",False,False,2.7,14,64.2
+"including a timeline","10.0",7,"Body",False,False,2.7,3,75.2
+"f) cost to complete the study including estimated expenses (i.e.: travel, etc.) and payment","10.0",7,"Body",False,False,2.7,15,64.2
+"structure","10.0",7,"Body",False,False,2.7,1,75.2
+"Evaluation and Awarding of Contract","12.0",8,"H2",True,False,35.4,5,283.0
+"Specifically, proposals will be evaluated proposals according to the following criteria:","10.0",8,"Body",False,False,5.5,11,64.2
+"Quality of the proposal /approach outlined for undertaking the business planning process","10.0",8,"Body",False,False,2.7,13,75.2
+"Demonstrated experience","10.0",8,"Body",False,False,2.7,2,75.2
+"Cost, including expenses","10.0",8,"Body",False,False,2.7,3,75.2
+"Timeline and projected completion date","10.0",8,"Body",False,False,2.7,5,75.2
+"Other relevant factors as determined by the ODL Steering Committee","10.0",8,"Body",False,False,2.7,10,75.2
+"Appendix A: ODL Envisioned Phases & Funding","14.0",9,"H2",True,False,35.4,7,189.9
+"Phase I: Business Planning","12.0",9,"H3",True,False,5.5,4,64.2
+"Timeline: March 2003 - September 2003","9.0",9,"Body",False,False,2.7,5,64.2
+"Funding Requested: -$100,000 jointly funded by stakeholder groups and the provincial government.","9.0",9,"Body",False,False,2.8,12,64.2
+"Result: The ODL business plan","9.0",9,"Body",False,False,2.8,5,64.2
+"The first phase will be to build the ODL business plan.","10.0",9,"Body",False,False,2.7,10,64.2
+"This plan will clearly define the ODL's services,","10.0",9,"Body",False,False,2.7,8,64.2
+"funding and governance structures, as well as implementation plans for 2003-2005.","10.0",9,"Body",False,False,2.7,11,64.2
+"It will also secure","10.0",9,"Body",False,False,2.7,3,64.2
+"the full commitment of all stakeholders and scope the operational plan for ODL for 2006 and beyond.","10.0",9,"Body",False,False,2.7,19,64.2
+"Given the number and diversity of stakeholders involved, the business planning process must be a fully","10.0",9,"Body",False,False,5.5,17,64.2
+"consultative approach.","10.0",9,"Body",False,False,2.7,2,64.2
+"To ensure that the planning results in a workable plan with the full commitment","10.0",9,"Body",False,False,5.5,14,64.2
+"of all stakeholders it must have competent, dedicated staffing and monies for the travel and","10.0",9,"Body",False,False,2.7,16,64.2
+"communication components so critical in a consultative process.","10.0",9,"Body",False,False,2.7,8,64.2
+"Phase II: Implementing and Transitioning","12.0",9,"H3",True,False,5.5,4,64.2
+"Timeline: April 2004-December 2006","9.0",9,"Body",False,False,2.7,4,64.2
+"Funding Requested: Funding from other states and provinces suggest that the ODL could receive","9.0",9,"Body",False,False,2.8,15,64.2
+"funding of up to $50 Million (over 3 years).","9.0",9,"Body",False,False,2.8,8,64.2
+"Funding to be provided partnership of government, library","9.0",9,"Body",False,False,2.8,7,64.2
+"stakeholders and other interested parties.","9.0",9,"Body",False,False,2.8,5,64.2
+"Result: The ODL is implemented and validated","9.0",9,"Body",False,False,2.8,7,64.2
+"The second phase will be to implement the ODL based on the business plan.","10.0",9,"Body",False,False,2.7,13,64.2
+"This phase recognizes","10.0",9,"Body",False,False,2.7,3,64.2
+"that for ODL to be optimally successful libraries must transition to a new way of doing business and","10.0",9,"Body",False,False,2.7,18,64.2
+"providing services.","10.0",9,"Body",False,False,2.7,2,64.2
+"The transition must occur while libraries continue to provide existing services and","10.0",9,"Body",False,False,5.5,12,64.2
+"respond to current challenges.","10.0",9,"Body",False,False,2.7,4,64.2
+"This implementation phase will funded by a partnership of government,","10.0",9,"Body",False,False,5.5,9,64.2
+"library stakeholders and other interested parties as a means to quickly jumpstart the ODL.","10.0",9,"Body",False,False,2.7,15,64.2
+"The seed money requested will allow libraries to realign their budgets and services as the infrastructure","10.0",9,"Body",False,False,5.5,17,64.2
+"and content of the ODL is created and secured.","10.0",9,"Body",False,False,2.7,8,64.2
+"Some of the funding will be new money, although there","10.0",9,"Body",False,False,5.5,9,64.2
+"is every indication that existing budgets and methods of operating may be modified as a result of","10.0",9,"Body",False,False,2.7,18,64.2
+"recommendations.","10.0",9,"Body",False,False,2.7,1,64.2
+"During this phase the polices, procedures, governance structures and accountability","10.0",9,"Body",False,False,5.5,10,64.2
+"mechanisms of the ODL will be put in place.","10.0",9,"Body",False,False,2.7,8,64.2
+"Pilot projects will be initiated, evaluated and expanded.","10.0",9,"Body",False,False,5.5,7,64.2
+"Information resources will be identified, contracts for these resources will be negotiated and resources","10.0",9,"Body",False,False,2.7,16,64.2
+"will be made deployed through the ODL.","10.0",9,"Body",False,False,2.7,6,64.2
+"Regular evaluation during this phase will ensure the ODL is","10.0",9,"Body",False,False,5.5,10,64.2
+"achieving its objectives and is accountable to its key communities.","10.0",9,"Body",False,False,2.7,10,64.2
+"Phase III: Operating and Growing the ODL","12.0",9,"H3",True,False,5.5,6,64.2
+"Timeline: January 2007 -","9.0",9,"Body",False,False,2.7,3,64.2
+"Funding: $50 Million annually ($35 Million requested from government)","9.0",9,"Body",False,False,2.8,9,64.2
+"Result: The ODL is fully operational and sustainable","9.0",9,"Body",False,False,2.8,8,64.2
+"In the third phase the ODL moves into the operational stage.","10.0",9,"Body",False,False,2.7,10,64.2
+"Ontarians will experience the full benefits","10.0",9,"Body",False,False,2.7,5,64.2
+"of the initiative and libraries will consolidate support around the ODL to grow resources and extend","10.0",9,"Body",False,False,2.7,18,64.2
+"Appendix B: ODL Steering Committee Terms of Reference","14.0",11,"H2",True,False,35.4,7,189.9
+"1. Preamble","12.0",11,"H3",True,False,24.3,2,64.2
+"Implementation of the Ontario Digital Library (ODL) requires a detailed business plan to be developed","10.0",11,"Body",False,False,5.5,16,64.2
+"and supported by its diverse stakeholder communities (see: www.odl.on.ca).","10.0",11,"Body",False,False,2.7,10,64.2
+"The business","10.0",11,"Body",False,False,5.5,2,64.2
+"development planning and commitment process will be overseen by a Steering Committee, who are","10.0",11,"Body",False,False,2.7,16,64.2
+"accountable to potential ODL funders including the Province of Ontario.","10.0",11,"Body",False,False,2.7,10,64.2
+"2. Terms of Reference","12.0",11,"H3",True,False,5.5,4,64.2
+"In broad terms, the ODL Business Plan Steering Committee is responsible for development of the","10.0",11,"Body",False,False,5.5,16,64.2
+"business plan, securing sector support, and management of the planners and process.","10.0",11,"Body",False,False,2.7,12,64.2
+"Specific","10.0",11,"Body",False,False,5.5,1,64.2
+"responsibilities include:","10.0",11,"Body",False,False,2.7,2,64.2
+"2.1 developing a detailed business plan for the three-year implementation phase of the ODL, including","10.0",11,"Body",False,False,2.7,16,64.2
+"governance, management, funding model and structure, organizational structure, marketing,","10.0",11,"Body",False,False,2.7,11,75.2
+"staffing, and evaluation;","10.0",11,"Body",False,False,2.7,3,75.2
+"2.2 consulting with and reporting to stakeholder communities, to ensure open, consistent and two-way","10.0",11,"Body",False,False,2.7,16,64.2
+"communication, and to ensure meaningful opportunities for stakeholder input into decision-","10.0",11,"Body",False,False,2.7,12,75.2
+"making;","10.0",11,"Body",False,False,2.7,1,75.2
+"2.3 recruiting and managing the business planner(s);","10.0",11,"Body",False,False,2.7,6,64.2
+"2.4 defining terms of reference and resource parameters for business planner(s), and authorizing","10.0",11,"Body",False,False,2.7,13,64.2
+"expenditures;","10.0",11,"Body",False,False,2.7,1,75.2
+"2.5 serving as a focus group for business planner(s) to test ideas;","10.0",11,"Body",False,False,2.7,11,64.2
+"2.6 providing signoff for business planner(s) at key decision points of business plan development;","10.0",11,"Body",False,False,2.7,14,64.2
+"2.7 securing commitment from library, government, and institutional stakeholders for implementation","10.0",11,"Body",False,False,2.7,13,64.2
+"of the business plan;","10.0",11,"Body",False,False,2.7,4,75.2
+"2.8 presenting the business plan to funders","10.0",11,"Body",False,False,2.7,6,64.2
+"2.9 undertaking advocacy efforts to promote the ODL to the broader communities including library","10.0",11,"Body",False,False,2.7,14,64.2
+"and education communities.","10.0",11,"Body",False,False,2.7,3,75.2
+"3. Membership","12.0",11,"H3",True,False,5.5,2,64.2
+"Each of the four sectors, Schools, Colleges, Universities, and Public Libraries can appoint up to two","10.0",11,"Body",False,False,5.5,17,64.2
+"representatives to the steering committee","10.0",11,"Body",False,False,2.7,5,64.2
+"3.1 Schools:","10.0",11,"Body",True,False,2.7,2,64.2
+"- Ontario School Library Association (OSLA) and The Association of Library Consultants and","10.0",11,"Body",False,False,2.7,13,75.2
+"Coordinators of Ontario (TALCO) (Executive Council of OSLA to name representative in","10.0",11,"Body",False,False,2.7,13,75.2
+"consultation with TALCO)","10.0",11,"Body",False,False,2.7,3,75.2
+"3.2 Universities:","10.0",11,"Body",True,False,2.7,2,64.2
+"- Ontario Council of University Libraries (OCUL) (OCUL to name)","10.0",11,"Body",False,False,2.7,9,75.2
+"3.3 Colleges:","10.0",11,"Body",True,False,2.7,2,64.2
+"- Bibliocentre, and Heads of Libraries and Learning Resources (UAG and HLLR to name)","10.0",11,"Body",False,False,2.7,13,75.2
+"3.4 Public libraries:","10.0",11,"Body",False,False,2.7,3,64.2
+"- Administrators of Medium-sized Public Libraries of Ontario (AMPLO), Administrators of Rural","10.0",11,"Body",False,False,2.7,13,75.2
+"Urban Public Libraries of Ontario (ARUPLO), Administrators of Small Public Libraries of","10.0",11,"Body",False,False,2.7,13,75.2
+"Ontario (ASPLO) and Chief Executives of Large-sized Public Libraries of Ontario (CELPLO)","10.0",11,"Body",False,False,2.7,14,75.2
+"(Executives of AMPLO, ARUPLO, ASPLO and CELPLO to name)","10.0",11,"Body",False,False,2.7,9,75.2
+"4. Appointment Criteria and Process","12.0",12,"H3",True,False,5.5,5,64.2
+"Groups and organizations named in Section 3 above are responsible for appointing up to two","10.0",12,"Body",False,False,2.7,16,75.2
+"representatives to the Steering Committee.","10.0",12,"Body",False,False,2.7,5,75.2
+"Desired characteristics for steering committee appointees include:","10.0",12,"Body",False,False,2.7,7,75.2
+"Strategic thinkers;","10.0",12,"Body",False,False,2.7,2,75.2
+"Committed to the concept of multi-sector partnerships;","10.0",12,"Body",False,False,2.7,6,75.2
+"Knowledgeable about digital libraries and resources;","10.0",12,"Body",False,False,2.7,5,75.2
+"Knowledgeable about government structures;","10.0",12,"Body",False,False,2.7,4,75.2
+"Respected by their communities; influential;","10.0",12,"Body",False,False,2.7,4,75.2
+"Able to take a consultative approach;","10.0",12,"Body",False,False,2.7,5,75.2
+"Able to devote time to Steering Committee business: approximately one day per month for","10.0",12,"Body",False,False,2.7,15,75.2
+"meetings plus 2-3 working days per month on related activities.","10.0",12,"Body",False,False,2.7,10,75.2
+"5. Term","12.0",12,"H3",True,False,5.5,2,64.2
+"Expected term on the Steering Committee is the time required to complete development of the","10.0",12,"Body",False,False,5.5,16,64.2
+"business plan plus two months.","10.0",12,"Body",False,False,2.7,5,64.2
+"This process is expected to take approximately 6 months.","10.0",12,"Body",False,False,5.5,8,64.2
+"6. Chair","12.0",12,"H3",True,False,5.5,2,64.2
+"Chair will be appointed by the Board of the Ontario Library Association.","10.0",12,"Body",False,False,5.5,11,64.2
+"7. Meetings","12.0",12,"H3",True,False,5.5,2,64.2
+"It is expected that in person meetings are held once per month and the majority of business will be","10.0",12,"Body",False,False,5.5,19,64.2
+"conducted by e-mail, and teleconference.","10.0",12,"Body",False,False,2.7,5,64.2
+"8. Lines of Accountability and Communication","12.0",12,"H3",True,False,5.5,5,64.2
+"9. Financial and Administrative Policies","12.0",13,"H3",True,False,5.5,5,64.2
+"Appendix C: ODL’s Envisioned Electronic Resources","14.0",14,"H2",True,False,35.4,6,189.9
+"The purpose of the ODL is to provide equal access to information for all Ontario citizens through","10.0",14,"Body",False,False,5.5,17,64.2
+"collaboration and resource sharing.","10.0",14,"Body",False,False,2.7,4,64.2
+"ODL will be a portal - capable of customization as","10.0",14,"Body",False,False,5.5,9,64.2
+"a home page for local libraries - to organized, comprehensive, authoritative and validated","10.0",14,"Body",False,False,2.7,13,64.2
+"e-information resources to meet the needs of all Ontario citizens at all stages and in all aspects","10.0",14,"Body",False,False,2.7,19,64.2
+"of their education, life and work.","10.0",14,"Body",False,False,2.7,6,64.2
+"Some examples:","10.0",14,"Body",False,False,5.5,2,64.2
+"1. Reference Resources","12.0",14,"Body",True,False,5.5,3,64.2
+"- directories: companies, associations, organizations, governments, educational institutions,","10.0",14,"Body",False,False,2.7,9,75.2
+"etc. etc.","10.0",14,"Body",False,False,2.7,2,75.2
+"- almanacs, country information","10.0",14,"Body",False,False,2.7,3,75.2
+"- dictionaries, thesauri, encyclopedias","10.0",14,"Body",False,False,2.7,3,75.2
+"-consumer information","10.0",14,"Body",False,False,2.7,2,75.2
+"- phone books,","10.0",14,"Body",False,False,2.7,3,75.2
+"travel guides, entertainment guides","10.0",14,"Body",False,False,2.7,4,75.2
+"-weather information","10.0",14,"Body",False,False,2.7,2,75.2
+"media/newspapers","10.0",14,"Body",False,False,2.7,1,75.2
+"- leisure time, recreational activity guides","10.0",14,"Body",False,False,2.7,5,75.2
+"- indexing and abstracting services","10.0",14,"Body",False,False,2.7,4,75.2
+"- currency converters,","10.0",14,"Body",False,False,2.7,3,75.2
+"- virtual reference services","10.0",14,"Body",False,False,2.7,3,75.2
+"-vocational/career information","10.0",14,"Body",False,False,2.7,2,75.2
+"-internet search engines","10.0",14,"Body",False,False,2.7,3,75.2
+"-current awareness services","10.0",14,"Body",False,False,2.7,3,75.2
+"2. Subject Guides","12.0",14,"Body",True,False,5.5,3,64.2
+"-arts and humanities","10.0",14,"Body",False,False,2.7,3,75.2
+"- business and economics","10.0",14,"Body",False,False,2.7,4,75.2
+"- education","10.0",14,"Body",False,False,2.7,2,75.2
+"-recreation and sports","10.0",14,"Body",False,False,2.7,3,75.2
+"-entertainment - games, activities for kids","10.0",14,"Body",False,False,2.7,6,75.2
+"-health information","10.0",14,"Body",False,False,2.7,2,75.2
+"-science and technology","10.0",14,"Body",False,False,2.7,3,75.2
+"-social sciences","10.0",14,"Body",False,False,2.7,2,75.2
+"-society and culture","10.0",14,"Body",False,False,2.7,3,75.2
+"3. Educational tool-kits","12.0",14,"Body",True,False,5.5,3,64.2
+"-guides to information gathering methodologies, information literacy","10.0",14,"Body",False,False,2.7,7,75.2
+"-study guides","10.0",14,"Body",False,False,2.7,2,75.2
+"-study skill development","10.0",14,"Body",False,False,2.7,3,75.2
+"-web-based curricula","10.0",14,"Body",False,False,2.7,2,75.2
+"-internet search guides","10.0",14,"Body",False,False,2.7,3,75.2
+"4. Journals, books, maps, music etc.","12.0",14,"Body",True,False,5.5,6,64.2
+"Parsippany -Troy Hills STEM Pathways","10.0",1,"Title",True,False,35.2,6,152.0
+"Goals:","14.0",1,"Body",True,False,26.4,1,152.0
+"Mission Statement: To provide PTHSD high school students with the opportunity to","10.0",1,"Body",True,False,8.3,14,152.0
+"concentrate their studies, beyond those required in high school, in the areas of science,","10.0",1,"Body",False,False,1.9,15,153.0
+"technology, engineering, and mathematics, and expose students to relevant real world","10.0",1,"Body",False,False,1.9,13,153.0
+"experiences through project work, conferences and presentations to enhance their high school","10.0",1,"Body",False,False,1.9,14,153.0
+"experience.","10.0",1,"Body",False,False,1.9,1,153.0
+"Inspire keen interest in mathematics, science, engineering, and","9.0",1,"Body",False,False,4.7,9,163.0
+"technology, develop strong scholarship in the subject and","9.0",1,"Body",False,False,2.8,8,163.0
+"promote the enjoyment of these studies in high school.","9.0",1,"Body",False,False,2.8,9,163.0
+"Expose students to potential career opportunities in the field.","9.0",1,"Body",False,False,5.7,9,163.0
+"Encourage students to pursue higher education and major in","9.0",1,"Body",False,False,2.8,9,163.0
+"STEM careers.","9.0",1,"Body",False,False,2.8,2,163.0
+"Promote interactions with STEM professionals to learn about","9.0",1,"Body",False,False,5.7,8,163.0
+"future opportunities.","9.0",1,"Body",False,False,2.8,2,163.0
+"Support field experiences connected to the world outside of","9.0",1,"Body",False,False,5.7,9,163.0
+"the school building.","9.0",1,"Body",False,False,2.8,3,163.0
+"Signal to employers, universities, training programs, and","9.0",1,"Body",False,False,5.7,7,163.0
+"military that a student has completed a comprehensive course","9.0",1,"Body",False,False,2.8,9,163.0
+"of study in a specialized area.","9.0",1,"Body",False,False,2.8,6,163.0
+"Cultivate transferable work habits such as perseverance, goal","9.0",1,"Body",False,False,5.7,8,163.0
+"setting, and self-direction.","9.0",1,"Body",False,False,2.8,3,163.0
+"PATHWAY OPTIONS","20.0",1,"H1",True,False,25.9,2,326.0
+"4 credits of Math","11.0",1,"Body",False,False,28.8,4,85.1
+"4 credits of Science","11.0",1,"Body",False,False,5.8,4,85.1
+"4 credits of STEM-designated electives","11.0",1,"Body",False,False,5.8,4,85.1
+"Maintain an overall 2.85 GPA","11.0",1,"Body",False,False,3.8,5,86.1
+"Participate in a minimum of 3 STEM","11.0",1,"Body",False,False,10.7,6,85.1
+"presentations/conferences each year","11.0",1,"Body",False,False,2.8,3,86.1
+"with a required minimum total of 12","11.0",1,"Body",False,False,2.8,7,86.1
+"presentations/conferences throughout","11.0",1,"Body",False,False,2.8,2,86.1
+"the 4 years.","11.0",1,"Body",False,False,2.8,3,86.1
+"Join and actively participate in a","11.0",1,"Body",False,False,8.7,5,85.1
+"STEM-related extracurricular activity or","11.0",1,"Body",False,False,2.8,4,86.1
+"club every year of attendance. -","11.0",1,"Body",False,False,2.8,5,86.1
+"4 credits of Math - At least one math","11.0",1,"Body",False,False,28.8,7,471.1
+"course should be an AP Math class.","11.0",1,"Body",False,False,2.8,7,472.1
+"4 credits of Science- At least one","11.0",1,"Body",False,False,5.8,6,471.1
+"science course should be an AP","11.0",1,"Body",False,False,2.8,6,472.1
+"Science class.","11.0",1,"Body",False,False,2.8,2,472.1
+"4 credits of STEM-designated electives","11.0",1,"Body",False,False,5.8,4,471.1
+"- One must be a Computer","11.0",1,"Body",False,False,3.8,5,472.1
+"Science/Technology Class","11.0",1,"Body",False,False,2.8,2,472.1
+"Maintain an overall 3.5 GPA","11.0",1,"Body",False,False,3.8,5,472.1
+"Participate in a minimum of 3 STEM","11.0",1,"Body",False,False,10.7,6,471.1
+"presentations/conferences a year with a","11.0",1,"Body",False,False,2.8,5,472.1
+"required minimum total of 12","11.0",1,"Body",False,False,2.8,5,472.1
+"presentations/conferences throughout","11.0",1,"Body",False,False,2.8,2,472.1
+"the 4 years.","11.0",1,"Body",False,False,2.8,3,472.1
+"Join and actively participate in a","11.0",1,"Body",False,False,8.7,5,471.1
+"STEM-related extracurricular activity or","11.0",1,"Body",False,False,2.8,4,472.1
+"club every year of attendance.","11.0",1,"Body",False,False,2.8,5,472.1
+"Either participate in an internship or","11.0",1,"Body",False,False,8.7,5,471.1
+"design and implement a community","11.0",1,"Body",False,False,2.8,5,472.1
+"impact project.","11.0",1,"Body",False,False,2.8,2,472.1
+"HOPE To SEE You THERE!","16.0",1,"H1",True,False,8.2,5,190.5
+"MEETING MINUTES","28.0",1,"Title",True,True,0.0,2,214.3
+"1. Call to Order","16.0",1,"H1",True,False,14.0,4,50.9
+"The meeting was called to order at 10:00 AM by the Chair.","12.0",1,"Body",False,False,8.4,12,50.9
+"2. Roll Call","16.0",1,"H1",True,False,14.0,3,50.9
+"The secretary conducted a roll call. All members were present.","12.0",1,"Body",False,False,8.4,10,50.9
+"3. Approval of Previous Minutes","16.0",1,"H1",True,False,14.0,5,50.9
+"The minutes of the previous meeting were approved as distributed.","12.0",1,"Body",False,False,8.4,11,50.9
+"4. Open Issues","16.0",2,"H1",True,False,14.0,3,50.9
+"Discussion on the quarterly budget was held.","12.0",2,"Body",False,False,8.4,7,50.9
+"5. New Business","16.0",2,"H1",True,False,14.0,3,50.9
+"A motion was made to approve the new marketing plan. The motion passed.","12.0",2,"Body",False,False,8.4,14,50.9
+"6. Adjournment","16.0",2,"H1",True,False,14.0,2,50.9
+"The meeting was adjourned at 11:30 AM.","12.0",2,"Body",False,False,8.4,8,50.9
+"CONSULTING AGREEMENT","24.0",1,"Title",True,True,0.0,2,180.1
+"This Consulting Agreement is made effective as of July 26, 2025.","12.0",1,"Body",False,False,13.8,11,50.9
+"1. SERVICES","14.0",1,"H1",True,False,11.2,2,50.9
+"The Consultant will provide consulting services in the field of software development.","12.0",1,"Body",False,False,8.4,12,50.9
+"2. TERM","14.0",1,"H1",True,False,11.2,2,50.9
+"The term of this Agreement will begin on the date above and continue for one year.","12.0",1,"Body",False,False,8.4,16,50.9
+"3. COMPENSATION","14.0",1,"H1",True,False,11.2,2,50.9
+"3.1 Invoices","12.0",1,"H2",True,False,8.4,2,67.9
+"The Client shall pay the Consultant a fee of $100 per hour.","12.0",1,"Body",False,False,8.4,12,50.9
+"4. CONFIDENTIALITY","14.0",2,"H1",True,False,11.2,2,50.9
+"The Consultant agrees to hold all Confidential Information in strict confidence.","12.0",2,"Body",False,False,8.4,11,50.9
+"5. GOVERNING LAW","14.0",2,"H1",True,False,11.2,3,50.9
+"This Agreement shall be governed by the laws of the State.","12.0",2,"Body",False,False,8.4,11,50.9
+"FOR IMMEDIATE RELEASE","14.0",1,"Title",True,True,0.0,3,214.3
+"Tech Innovations Inc. Launches Groundbreaking New AI Platform","18.0",1,"H1",True,True,16.8,8,128.6
+"HYDERABAD, INDIA – July 26, 2025 – Tech Innovations Inc. today announced the launch of its new platform.","12.0",1,"Body",False,False,8.4,19,50.9
+"About Tech Innovations Inc.","12.0",1,"H1",True,False,8.4,4,50.9
+"Tech Innovations is a leading provider of AI solutions.","12.0",1,"Body",False,False,8.4,9,50.9
+"Media Contact:","12.0",1,"H1",True,False,8.4,2,50.9
+"John Doe","12.0",1,"Body",False,False,8.4,2,50.9
+"Director of Communications","12.0",1,"Body",False,False,8.4,3,50.9
+"NON-DISCLOSURE AGREEMENT","24.0",1,"Title",True,True,0.0,2,180.1
+"1. Definition of Confidential Information","14.0",1,"H1",True,False,11.2,5,50.9
+"'Confidential Information' means any data or information that is proprietary to the Disclosing Party.","12.0",1,"Body",False,False,8.4,15,50.9
+"2. Obligations","14.0",1,"H1",True,False,11.2,2,50.9
+"The Receiving Party shall hold and maintain the Confidential Information in strict confidence.","12.0",1,"Body",False,False,8.4,13,50.9
+"3. Term","14.0",2,"H1",True,False,11.2,2,50.9
+"The nondisclosure provisions of this Agreement shall survive the termination of this Agreement.","12.0",2,"Body",False,False,8.4,13,50.9
+"Employee Handbook","36.0",1,"Title",True,True,0.0,2,180.1
+"Introduction","18.0",2,"H1",True,False,22.4,1,50.9
+"Welcome to our company. This handbook outlines our policies and procedures.","12.0",2,"Body",False,False,8.4,11,50.9
+"Code of Conduct","18.0",3,"H1",True,False,22.4,3,50.9
+"All employees must adhere to the highest standards of professional conduct.","12.0",3,"Body",False,False,8.4,11,50.9
+"Employment Policies","18.0",4,"H1",True,False,22.4,2,50.9
+"Attendance","16.0",4,"H2",True,False,14.0,1,67.9
+"Punctual and regular attendance is expected of all employees.","12.0",4,"Body",False,False,8.4,9,67.9
+"Dress Code","16.0",5,"H2",True,False,14.0,2,67.9
+"A professional appearance is important.","12.0",5,"Body",False,False,8.4,5,67.9
+"Leave Policy","16.0",6,"H2",True,False,14.0,2,67.9
+"Please refer to the detailed leave policy document for information on vacation and sick leave.","12.0",6,"Body",False,False,8.4,16,67.9
+"Product Catalog 2024","36.0",1,"Title",True,True,0.0,3,171.4
+"Section 1: Laptops","18.0",2,"H1",True,False,22.4,3,50.9
+"The Innovator X1","16.0",2,"H2",True,False,14.0,3,50.9
+"A powerful and lightweight laptop for professionals on the go.","12.0",2,"Body",False,False,8.4,10,50.9
+"The Gamer Pro 5","16.0",3,"H2",True,False,14.0,4,50.9
+"Experience next-level gaming with our top-of-the-line gaming laptop.","12.0",3,"Body",False,False,8.4,9,50.9
+"Section 2: Desktops","18.0",4,"H1",True,False,22.4,3,50.9
+"The Workstation Z","16.0",4,"H2",True,False,14.0,3,50.9
+"Unmatched performance for creative and technical professionals.","12.0",4,"Body",False,False,8.4,7,50.9
+"White Paper","36.0",1,"Title",True,True,0.0,2,248.6
+"The Future of Artificial Intelligence","24.0",1,"Body",False,True,28.0,5,157.1
+"Abstract","16.0",2,"H1",True,False,14.0,1,50.9
+"This paper explores the potential impact of AI on various industries over the next decade.","12.0",2,"Body",False,False,8.4,15,50.9
+"1. Introduction","16.0",3,"H1",True,False,14.0,2,50.9
+"Artificial Intelligence (AI) is poised to reshape the global economy.","12.0",3,"Body",False,False,8.4,10,50.9
+"2. Problem Statement","16.0",4,"H1",True,False,14.0,3,50.9
+"3. Proposed Solution","16.0",5,"H1",True,False,14.0,3,50.9
+"4. Conclusion","16.0",6,"H1",True,False,14.0,2,50.9
+"5. References","16.0",7,"H1",True,False,14.0,2,50.9
+"Dr. Evelyn Reed","36.0",1,"Title",True,True,0.0,3,180.1
+"Education","18.0",1,"H1",True,False,16.8,1,50.9
+"Ph.D. in Astrophysics, Stanford University, 2010","12.0",1,"Body",False,False,8.4,7,50.9
+"Research Experience","18.0",1,"H1",True,False,16.8,2,50.9
+"Postdoctoral Fellow, NASA Jet Propulsion Laboratory, 2010-2013","12.0",1,"Body",False,False,8.4,8,50.9
+"Publications","18.0",2,"H1",True,False,16.8,1,50.9
+"Teaching Experience","18.0",2,"H1",True,False,16.8,2,50.9
+"Awards and Honors","18.0",3,"H1",True,False,16.8,3,50.9
+"Annual Financial Report","36.0",1,"Title",True,True,0.0,3,142.9
+"For the Fiscal Year Ended June 30, 2025","18.0",1,"Body",False,True,16.8,8,128.6
+"Letter to Shareholders","18.0",2,"H1",True,False,22.4,3,50.9
+"Financial Highlights","18.0",3,"H1",True,False,22.4,2,50.9
+"Management's Discussion and Analysis","18.0",4,"H1",True,False,22.4,5,50.9
+"Independent Auditor's Report","18.0",5,"H1",True,False,22.4,3,50.9
+"Consolidated Financial Statements","18.0",6,"H1",True,False,22.4,3,50.9
+"Balance Sheet","16.0",6,"H2",True,False,14.0,2,67.9
+"Income Statement","16.0",7,"H2",True,False,14.0,2,67.9
+"Statement of Cash Flows","16.0",8,"H2",True,False,14.0,4,67.9
+"The Lofts at Downtown Crossing","28.0",1,"Title",True,True,0.0,5,142.9
+"Property Features","18.0",1,"H1",True,False,16.8,2,50.9
+"Hardwood floors, stainless steel appliances, in-unit laundry.","12.0",1,"Body",False,False,8.4,7,50.9
+"Floor Plans","18.0",1,"H1",True,False,16.8,2,50.9
+"Studio, 1-Bedroom, and 2-Bedroom units available.","12.0",1,"Body",False,False,8.4,6,50.9
+"Location","18.0",2,"H1",True,False,16.8,1,50.9
+"Located in the heart of the city, close to public transportation.","12.0",2,"Body",False,False,8.4,11,50.9
+"Contact Information","18.0",2,"H1",True,False,16.8,2,50.9
+"Call us at 555-1234 to schedule a tour.","12.0",2,"Body",False,False,8.4,8,50.9

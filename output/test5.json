@@ -12,12 +12,12 @@
       "page": 1
     },
     {
-      "level": "H1",
+      "level": "H2",
       "text": "This is  a Bolded heading",
       "page": 1
     },
     {
-      "level": "H1",
+      "level": "H2",
       "text": "This is italic heading",
       "page": 1
     },
@@ -27,12 +27,12 @@
       "page": 2
     },
     {
-      "level": "H1",
+      "level": "H2",
       "text": "This is  a Bolded heading",
       "page": 2
     },
     {
-      "level": "H1",
+      "level": "H2",
       "text": "This is italic heading",
       "page": 2
     }
