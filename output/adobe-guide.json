@@ -13,17 +13,17 @@
     },
     {
       "level": "H3",
-      "text": "PDF as an intelligent, interactive experience—one that understands structure,",
-      "page": 2
-    },
-    {
-      "level": "H3",
       "text": "The Journey Ahead",
       "page": 2
     },
     {
       "level": "H3",
       "text": "• Round 1:",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Kick things off by building the brains — extract structured outlines from",
       "page": 2
     },
     {
@@ -39,11 +39,6 @@
     {
       "level": "H3",
       "text": "Why This Matters",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Are you in?",
       "page": 2
     },
     {
@@ -98,27 +93,12 @@
     },
     {
       "level": "H3",
-      "text": "o Headings: H1, H2, H3 (with level and page number)",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "• Outputs a valid JSON file in the format below:",
-      "page": 3
-    },
-    {
-      "level": "H3",
       "text": "You Will Be Provided",
       "page": 3
     },
     {
       "level": "H3",
       "text": "1. A sample input PDF (e.g., sample.pdf)",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "2. A sample ground truth output (sample.json) for format clarity",
       "page": 3
     },
     {
@@ -208,21 +188,6 @@
     },
     {
       "level": "H3",
-      "text": "Requirement",
-      "page": 4
-    },
-    {
-      "level": "H3",
-      "text": "No internet access",
-      "page": 5
-    },
-    {
-      "level": "H3",
-      "text": "allowed",
-      "page": 5
-    },
-    {
-      "level": "H3",
       "text": "Scoring Criteria",
       "page": 5
     },
@@ -233,32 +198,12 @@
     },
     {
       "level": "H3",
-      "text": "Criteria",
-      "page": 5
-    },
-    {
-      "level": "H3",
-      "text": "Points",
-      "page": 5
-    },
-    {
-      "level": "H3",
-      "text": "Bonus: Multilingual Handling (e.g.,",
-      "page": 5
-    },
-    {
-      "level": "H3",
-      "text": "Japanese)",
-      "page": 5
-    },
-    {
-      "level": "H3",
-      "text": "Total",
-      "page": 5
-    },
-    {
-      "level": "H3",
       "text": "Submission Checklist",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "1. Git Project with a working Dockerfile in the root director and",
       "page": 5
     },
     {
@@ -293,6 +238,11 @@
     },
     {
       "level": "H3",
+      "text": "• Don’t rely solely on font sizes for heading level determination —",
+      "page": 5
+    },
+    {
+      "level": "H3",
       "text": "What Not to Do",
       "page": 6
     },
@@ -314,6 +264,11 @@
     {
       "level": "H3",
       "text": "[[Public Dataset Folder]]",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "(For Sample Input and Output Files, please refer to the appendix)",
       "page": 6
     },
     {
@@ -348,17 +303,12 @@
     },
     {
       "level": "H3",
+      "text": "Document collection, persona and job-to-be-done can be very diverse. So, the",
+      "page": 7
+    },
+    {
+      "level": "H3",
       "text": "• Documents can be from any domain (Example: Research papers,",
-      "page": 7
-    },
-    {
-      "level": "H3",
-      "text": "• Persona can again be very diverse (Example: Researcher, Student,",
-      "page": 7
-    },
-    {
-      "level": "H3",
-      "text": "• Job-to-be-done: This will be related to the persona (Example:",
       "page": 7
     },
     {
@@ -419,11 +369,6 @@
     {
       "level": "H3",
       "text": "• Persona: Undergraduate Chemistry Student",
-      "page": 8
-    },
-    {
-      "level": "H3",
-      "text": "• Job: \"Identify key concepts and mechanisms for exam preparation",
       "page": 8
     },
     {
@@ -523,11 +468,6 @@
     },
     {
       "level": "H3",
-      "text": "• Processing time ≤ 60 seconds for document collection (3-5",
-      "page": 8
-    },
-    {
-      "level": "H3",
       "text": "• No internet access allowed during execution",
       "page": 8
     },
@@ -559,21 +499,6 @@
     {
       "level": "H3",
       "text": "Max",
-      "page": 9
-    },
-    {
-      "level": "H3",
-      "text": "Points",
-      "page": 9
-    },
-    {
-      "level": "H3",
-      "text": "Description",
-      "page": 9
-    },
-    {
-      "level": "H3",
-      "text": "Criteria",
       "page": 9
     },
     {

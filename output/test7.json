@@ -1,0 +1,220 @@
+{
+  "title": "Identifying the Hidden Nexus between Benford’s Law Establishment in Stock Market",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Abstract",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "1. Introduction",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "1 Mostafa.RaeisiSarkandiz@unipa.it",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Digit",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "Probability",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "2. Theoretical Foundations",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "a pure random walk as follows:",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "3. Data",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "4. Statistical Inferences",
+      "page": 5
+    },
+    {
+      "level": "H1",
+      "text": "Table 2. Descriptive Statistics",
+      "page": 5
+    },
+    {
+      "level": "H2",
+      "text": "Statistic",
+      "page": 5
+    },
+    {
+      "level": "H2",
+      "text": "Value",
+      "page": 5
+    },
+    {
+      "level": "H1",
+      "text": "Table 3. Data Distribution",
+      "page": 5
+    },
+    {
+      "level": "H2",
+      "text": "Test",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Jarque- Bera",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Anderson- Darling",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Kolmogorov- Smirnov",
+      "page": 5
+    },
+    {
+      "level": "H2",
+      "text": "𝑅̅ = ( 2𝑛1𝑛2",
+      "page": 5
+    },
+    {
+      "level": "H2",
+      "text": "𝑆2 = 2𝑛1𝑛2(2𝑛1𝑛2 −𝑛1 −𝑛2)",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "1 https://www.investing.com/indices/wig-20-historical-data",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "𝑚, 𝑥𝑠",
+      "page": 6
+    },
+    {
+      "level": "H2",
+      "text": "𝑚). This statistic is convergence",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Test Value (Mean)",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Cases Less Than Test Value",
+      "page": 6
+    },
+    {
+      "level": "H2",
+      "text": "Cases Greater Than Test Value",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Number of Runs",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "Z Statistic",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "Table 5. BDS Test",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "Method: Fraction of Pairs",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "Dimension",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "(𝑂𝑘−𝐸𝑘)2",
+      "page": 7
+    },
+    {
+      "level": "H1",
+      "text": "Table 6. Testing a Benford Distribution for First Digit",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "Digit",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "Sum",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Table 7. Testing a Uniform Distribution for First Digit",
+      "page": 8
+    },
+    {
+      "level": "H2",
+      "text": "Digit",
+      "page": 8
+    },
+    {
+      "level": "H2",
+      "text": "Sum",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "𝑝−1",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "5. Conclusion",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "References",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Baillie, R. T. (1996). Long Memory Processes and Fractional Integration in Econometrics,",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Benford, F. (1938). The Law of Anomalous Numbers, Proceedings of the American",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Kolmogorov, A. (1933).  Sulla Determinazione Empirica di una Legge di Distribuzione,",
+      "page": 11
+    }
+  ]
+}

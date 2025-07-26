@@ -11,80 +11,92 @@ def is_noise(text: str) -> bool:
     """
     text_lower = text.lower().strip()
 
-    # Rule 1: Lines that end with a full stop are almost always not headings.
-    # This is a very strong signal for body text.
-    if text.endswith('.'):
+    # Rule 1: Lines that end with a full stop, question mark, or exclamation mark
+    # are almost always not headings. This is a very strong signal for body text.
+    if text.endswith('.') or text.endswith('?') or text.endswith('!'):
         return True
 
     # Rule 2: Lines that are too long (more than a typical heading length) are likely paragraphs.
-    if len(text.split()) > 10: # Increased strictness for length
+    # Headings are usually concise.
+    if len(text.split()) > 12: # Increased strictness for length
         return True
     
-    # Rule 3: Very short, non-alphabetic lines (separators, etc.)
+    # Rule 3: Very short, non-alphabetic lines (separators, page numbers, etc.)
+    # This catches lines like "---" or "Page 1".
     if len(text) > 0 and sum(c.isalpha() for c in text) / (len(text) + 1e-6) < 0.2:
         return True
     
-    # Rule 4: Common page artifacts (e.g., page numbers, generic headers/footers)
-    if re.match(r"^\s*(page|fig\.|table)\s+\d+\s*$", text_lower): # More specific to avoid filtering valid short headings
+    # Rule 4: Common page artifacts (e.g., generic headers/footers that might be bolded)
+    # Be specific to avoid filtering valid short headings.
+    if re.match(r"^\s*(page|fig\.|table)\s+\d+\s*$", text_lower):
         return True
     
     # Rule 5: Generic placeholder text
     if "lorem ipsum" in text_lower:
         return True
+    
+    # Rule 6: Common list item patterns that are short but not meaningful headings
+    if re.match(r"^\s*([\u2022\u25CF\u25BA]|\d+\.)$", text_lower) and len(text.split()) < 3:
+        return True
         
     return False
 
-def classify_headings(feature_lines):
+def classify_headings(feature_lines, noisy_patterns: list):
     """
     Classifies text lines into Title, H1, H2, H3 based on robust feature analysis and adaptive clustering.
     This function implements a more sophisticated heuristic-based approach:
-    1. Identifies approximate body text font size using statistical methods (mode/median).
-    2. Filters for potential heading candidates based on size, boldness, and structural cues.
-    3. Identifies the document title with a weighted heuristic (size, position, uniqueness).
-    4. Groups remaining heading candidates by their visual style (font size, boldness, indentation, color).
-    5. Dynamically assigns H1, H2, H3 levels by sorting these styles by prominence
-       (size, then boldness, then indentation, then color) and mapping them adaptively.
-    6. Ensures logical hierarchy (e.g., H2 cannot be larger than H1).
-    7. Applies noise filtering to remove non-heading content.
+    1. Identifies approximate body text font size and color.
+    2. Filters out noisy header/footer text identified by the detector.
+    3. Filters for potential heading candidates based on strong visual cues.
+    4. Identifies the document title with a weighted heuristic (size, position, uniqueness).
+    5. Groups remaining heading candidates by their distinct visual style (font size, boldness, indentation, color).
+    6. Dynamically assigns H1, H2, H3 levels by sorting these styles by prominence
+       and mapping them adaptively, prioritizing clear visual breaks.
+    7. Applies aggressive noise filtering to remove non-heading content.
     8. Sorts the final list of headings by their appearance in the document.
     Args:
         feature_lines: A list of feature vectors from feature_extractor.
+        noisy_patterns: A list of strings to be filtered out (from header/footer detector).
     Returns:
         A tuple containing the document title (str) and the outline (a list of heading dicts).
     """
-    if not feature_lines:
+    # Filter out noisy patterns first
+    filtered_lines = [line for line in feature_lines if line["text"].strip().lower() not in noisy_patterns]
+    
+    if not filtered_lines:
         return "Untitled Document", []
 
     # --- 1. Identify Body Text Style Robustly ---
-    # Collect font sizes from lines likely to be body text (e.g., not extremely large, not single words)
-    # Using `round(..., 1)` to group similar font sizes.
-    potential_body_sizes = [
-        round(line["font_size"], 1) for line in feature_lines
-        if line["font_size"] > 5 and line["font_size"] < 25 and line["word_count"] > 4 # Filter out very small/large and short lines
+    # Collect font sizes and colors from lines likely to be body text.
+    # Filter out very small/large fonts and very short lines which are unlikely to be body.
+    potential_body_lines = [
+        line for line in filtered_lines
+        if line["font_size"] > 5 and line["font_size"] < 25 and line["word_count"] > 4 and not line["is_bold"]
     ]
     
     body_font_size = 10.0 # Default fallback
-    if potential_body_sizes:
-        # Use the mode for body font size, as it's robust to outliers
-        body_font_size_counts = Counter(potential_body_sizes)
-        body_font_size = body_font_size_counts.most_common(1)[0][0]
+    body_font_color = 0 # Default to black
+    if potential_body_lines:
+        # Get mode font size
+        body_font_size_counts = Counter([round(line["font_size"], 1) for line in potential_body_lines])
+        if body_font_size_counts:
+            body_font_size = body_font_size_counts.most_common(1)[0][0]
+        
+        # Get mode font color
+        body_font_color_counts = Counter([line["font_color"] for line in potential_body_lines])
+        if body_font_color_counts:
+            body_font_color = body_font_color_counts.most_common(1)[0][0]
 
     # --- 2. Identify Title Candidate (Adaptive Page Title Detection WOW Factor) ---
-    # Prioritize: Highest Y-position on page 1, then largest font size, then bold/centered.
+    # Prioritize: Highest Y-position on page 1, then largest font size, then bold/centered/distinct color.
     title_candidate = {"font_size": 0.0, "text": "Untitled Document", "page_number": 0, "y0": float('inf'), "is_bold": False, "is_centered": False, "font_color": 0}
     
-    first_page_lines = [line for line in feature_lines if line["page_number"] == 1]
+    first_page_lines = [line for line in filtered_lines if line["page_number"] == 1]
     
     for line in first_page_lines:
         # Skip very short lines or lines that are clearly not titles
-        if line["word_count"] < 2 or len(line["text"].strip()) < 5:
+        if is_noise(line["text"]) or line["word_count"] < 2 or len(line["text"].strip()) < 5:
             continue
-
-        # A line is a strong title candidate if:
-        # 1. It's higher on the page than the current best candidate.
-        # 2. Or, it's at a similar height, but has a larger font size.
-        # 3. Or, same height & size, but bolder/more centered.
-        # 4. NEW: Consider font color in tie-breaking.
 
         is_stronger_candidate = False
 
@@ -98,13 +110,13 @@ def classify_headings(feature_lines):
                     is_stronger_candidate = True
                 elif line["is_centered"] and not title_candidate["is_centered"]: # Same size/height/bold, but current is centered
                     is_stronger_candidate = True
-                elif line["font_color"] != title_candidate["font_color"] and title_candidate["font_color"] == 0: # Prefer non-black color if current is black
+                # Prefer lines with a distinct color if the current candidate is black (0)
+                elif line["font_color"] != body_font_color and title_candidate["font_color"] == body_font_color:
                     is_stronger_candidate = True
 
         if is_stronger_candidate:
             title_candidate = line.copy()
-            # If a line becomes the title candidate, it should definitely not be a heading candidate
-            title_candidate["_is_title"] = True
+            title_candidate["_is_title"] = True # Mark as title
         else:
             line["_is_title"] = False # Mark others
 
@@ -112,26 +124,33 @@ def classify_headings(feature_lines):
     
     # --- 3. Filter for Potential Headings (Visual Heuristics Ensemble WOW Factor) ---
     heading_candidates = []
-    for line in feature_lines:
+    for line in filtered_lines:
         cleaned_text = line["text"].replace('\n', ' ').strip()
         if not cleaned_text or cleaned_text == title_text or line.get("_is_title", False):
             continue
         
-        # Apply noise filtering early and aggressively
         if is_noise(cleaned_text):
             continue
 
-        # Heuristic checks for actual heading characteristics
-        is_larger_than_body = line["font_size"] > body_font_size * 1.15
-        is_bold_and_prominent = line["is_bold"] and line["font_size"] >= body_font_size * 0.95
-        is_patterned_heading = line["starts_with_pattern"] and line["word_count"] < 30
+        is_significantly_larger = line["font_size"] > body_font_size * 1.15
+        is_bold_and_distinct_color = line["is_bold"] and line["font_color"] != body_font_color
+        is_bold_and_prominent_size = line["is_bold"] and line["font_size"] >= body_font_size * 1.05
         has_significant_space_above = line["space_above"] > (body_font_size * 0.8)
-        is_distinct_color = (line["font_color"] != 0 and line["font_color"] != 16777215) # Not black and not white
+        starts_with_pattern_and_short = line["starts_with_pattern"] and line["word_count"] < 10
 
-        # Combine heuristics: A line must meet a strong primary criterion AND not be noise.
-        # This makes the classification much stricter.
-        if (is_larger_than_body or is_bold_and_prominent or is_patterned_heading or has_significant_space_above or is_distinct_color):
-            line["_explanation"] = "Candidate based on font size, bold, pattern, spacing, or color."
+        is_strong_candidate = (
+            is_significantly_larger or
+            is_bold_and_distinct_color or
+            is_bold_and_prominent_size or
+            has_significant_space_above or
+            starts_with_pattern_and_short
+        )
+        
+        if is_strong_candidate:
+            if len(line["text"].split()) > 15 and line["is_bold"] and line["font_color"] == body_font_color:
+                continue
+            
+            line["_explanation"] = "Candidate based on strong visual cues."
             heading_candidates.append(line)
 
     # --- 4. Group Candidates by Visual Style and Assign Adaptive Levels ---
@@ -153,15 +172,13 @@ def classify_headings(feature_lines):
 
     heading_styles = defaultdict(list)
     for h in heading_candidates:
-        # Use rounded font size, boldness, and a representative x0 for style key
-        # Also include font_color for a more distinct style key
         style_key = (round(h["font_size"], 1), h["is_bold"], get_closest_representative_x0(h["x0"]), h["font_color"])
         heading_styles[style_key].append(h)
 
     sorted_styles = sorted(
         heading_styles.keys(), 
-        key=lambda s: (s[0], s[1], s[2], s[3]), # s[0]=font_size, s[1]=is_bold, s[2]=x0, s[3]=font_color
-        reverse=True # Largest font size first, then bold, then most left, then distinct color
+        key=lambda s: (s[0], s[1], s[2], s[3]),
+        reverse=True
     )
 
     outline = []
@@ -201,7 +218,6 @@ def classify_headings(feature_lines):
         style_key = (round(h["font_size"], 1), h["is_bold"], get_closest_representative_x0(h["x0"]), h["font_color"])
         heading_level = assigned_levels_map.get(style_key, "H3")
         
-        # Re-apply noise filtering as a final check before adding to outline
         if is_noise(h["text"]):
             continue
 

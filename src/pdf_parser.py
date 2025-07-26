@@ -1,4 +1,3 @@
-# src/pdf_parser.py
 import fitz # PyMuPDF
 import os
 

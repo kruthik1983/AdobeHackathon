@@ -10,6 +10,7 @@ from .feature_extractor import extract_features
 from .heading_classifier import classify_headings
 from .json_builder import create_json_file
 from .font_analysis_logger import log_font_styles
+from .header_footer_detector import get_header_footer_candidates
 
 def main():
     """
@@ -68,22 +69,19 @@ def main():
             print(f"Skipping '{pdf_filename}' due to parsing error or no content.")
             create_json_file("Untitled Document", [], pdf_filename, output_dir) # Output empty outline
             continue
-
+        
         # 2. Extract features from each text line
         current_doc_features = extract_features(pages_data)
         if not current_doc_features:
             print(f"No text lines or features extracted from '{pdf_filename}'.")
             create_json_file("Untitled Document", [], pdf_filename, output_dir) # Output empty outline
             continue
+
+        # 3. Use the new module to identify and filter out header/footer text
+        noisy_patterns = get_header_footer_candidates(current_doc_features, len(pages_data))
         
-        # Add a source_filename tag to features for the logger, useful for multi-doc analysis
-        for feature in current_doc_features:
-            feature['source_filename'] = pdf_filename
-        all_docs_features_for_logging.extend(current_doc_features)
-
-
-        # 3. Classify headings and determine the document title
-        title, outline = classify_headings(current_doc_features)
+        # 4. Classify headings and determine the document title
+        title, outline = classify_headings(current_doc_features, noisy_patterns)
         
         # If title is empty/generic after classification, try to derive from first H1 or filename
         if not title or title.strip().lower() in ["untitled", "untitled document"]:
@@ -99,14 +97,14 @@ def main():
             else:
                 title = os.path.splitext(pdf_filename)[0].replace('_', ' ').replace('-', ' ').title() # Fallback to cleaned filename
         
-        # 4. Build and write the final JSON output
+        # 5. Build and write the final JSON output
         create_json_file(title, outline, pdf_filename, output_dir)
         
         end_time = time.time()
         processing_time = end_time - start_time
         print(f"Finished processing '{pdf_filename}' in {processing_time:.2f} seconds.")
 
-    # 5. Log comprehensive font analysis for all documents (WOW factor: PDF Fonts & Styles Explorer)
+    # 6. Log comprehensive font analysis for all documents (WOW factor: PDF Fonts & Styles Explorer)
     if all_docs_features_for_logging:
         log_font_styles(all_docs_features_for_logging, output_dir, filename_prefix="all_docs_font_report")
     else:

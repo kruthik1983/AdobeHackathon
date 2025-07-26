@@ -52,11 +52,6 @@
       "page": 1
     },
     {
-      "level": "H1",
-      "text": "Ordered List:",
-      "page": 1
-    },
-    {
       "level": "H2",
       "text": "1. First item",
       "page": 1
@@ -79,6 +74,11 @@
     {
       "level": "H1",
       "text": "Section 6: Quote Example",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "“This is a sample blockquote. It can be used to highlight important",
       "page": 2
     },
     {
@@ -113,11 +113,6 @@
     },
     {
       "level": "H1",
-      "text": "Section 4: Lists",
-      "page": 3
-    },
-    {
-      "level": "H1",
       "text": "Unordered List:",
       "page": 3
     },
@@ -134,11 +129,6 @@
     {
       "level": "H2",
       "text": "- Item 3",
-      "page": 3
-    },
-    {
-      "level": "H1",
-      "text": "Ordered List:",
       "page": 3
     },
     {
@@ -169,6 +159,11 @@
     {
       "level": "H1",
       "text": "Section 6: Quote Example",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "“This is a sample blockquote. It can be used to highlight important",
       "page": 3
     },
     {

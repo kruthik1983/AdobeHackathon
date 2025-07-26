@@ -1,11 +1,6 @@
 {
-  "title": "PDF BOOKMARK SAMPLE",
+  "title": "Sample Date:",
   "outline": [
-    {
-      "level": "H2",
-      "text": "Sample Date:",
-      "page": 1
-    },
     {
       "level": "H2",
       "text": "Prepared by:",
@@ -27,11 +22,6 @@
       "page": 1
     },
     {
-      "level": "H3",
-      "text": "PDF Bookmark Sample",
-      "page": 1
-    },
-    {
       "level": "H2",
       "text": "Sample Data File",
       "page": 2
@@ -47,11 +37,6 @@
       "page": 2
     },
     {
-      "level": "H3",
-      "text": "PDF Bookmark Sample",
-      "page": 2
-    },
-    {
       "level": "H1",
       "text": "Sample Files",
       "page": 3
@@ -59,11 +44,6 @@
     {
       "level": "H2",
       "text": "Filename",
-      "page": 3
-    },
-    {
-      "level": "H2",
-      "text": "Description",
       "page": 3
     },
     {
@@ -107,11 +87,6 @@
       "page": 3
     },
     {
-      "level": "H2",
-      "text": "Use the command line parameter …",
-      "page": 3
-    },
-    {
       "level": "H3",
       "text": "-abmkap_bookmark.bmk -abmsinvoices",
       "page": 3
@@ -127,18 +102,8 @@
       "page": 3
     },
     {
-      "level": "H3",
-      "text": "PDF Bookmark Sample",
-      "page": 3
-    },
-    {
       "level": "H1",
       "text": "Running the Sample",
-      "page": 4
-    },
-    {
-      "level": "H3",
-      "text": "PDF Bookmark Sample",
       "page": 4
     }
   ]
