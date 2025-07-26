@@ -1,0 +1,30 @@
+{
+  "title": "Getting Started",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Introduction to Python",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "History",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Features",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Installation",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Variables",
+      "page": 1
+    }
+  ]
+}

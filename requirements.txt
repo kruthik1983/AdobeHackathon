@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 pymupdf
+numpy
+pandas
+scikit-learn
+joblib
+opencv-python
+=======
+pymupdf
+>>>>>>> efb767259a9f29dcc72af8aad1e1f8e1bb71b90a
