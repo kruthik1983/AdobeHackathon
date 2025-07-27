@@ -70,4 +70,3 @@ docker run --rm \
 
 - `output/example.json`: Final structured JSON
 - `output/example_font_report.csv`: Font style diagnostics
-- `output/classified_csvs/example_classified.csv`: Prediction logs for each line
