@@ -7,8 +7,18 @@
       "page": 1
     },
     {
+      "level": "H1",
+      "text": "This document serves as an example of a text-based PDF file. It includes",
+      "page": 1
+    },
+    {
       "level": "H2",
       "text": "Sample Text PDF",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "This document serves as an example of a text-based PDF file. It includes",
       "page": 2
     }
   ]

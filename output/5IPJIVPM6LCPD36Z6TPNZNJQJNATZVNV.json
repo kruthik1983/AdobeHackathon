@@ -1,0 +1,110 @@
+{
+  "title": "Document Level Adjustment Business Rules",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "General Information",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Required Approvals",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "ALL DLA’S regardless of the amount must be reviewed and approved with signatures by the",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "DLA’S regardless of the amount between two different fund codes and or program codes, or any",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Transfers between Organizations and/or Financial Management Centers (FMCs): Any DLA that is",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Business Rules for Document Level Adjustments",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "FROM and TO Fund Code Fiscal Year must Match.  Both the ‘FROM’ and ‘TO’ sides of a transaction",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "FCFY Exception 1: No Match Overruns- FCFY can only move forward from a prior FCFY to the",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "The ‘FROM’ and ‘TO’ Dollar Amounts must Match.  The DLA dollar amounts must be equal on",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "Object Class Codes 31.1x and 32.xx :  DLA’s that contain object class codes 31.1x will not be processed",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "Prior Year Adjustments: Only changes to the object class will be made.  Any other changes will be made",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "Over/Under Object Class Codes are Not Allowed.  DLA’s will not be processed for any of the",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "Leave/Benefit Surcharge Object Class Codes are Not Allowed.  DLA’s are not allowed for any of the",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "Overhead Surcharge Object Class Codes are Not Allowed.  DLA’s will NOT be processed for any of",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "Accounting Data must be Valid.  The system requires that each DLA transaction include active",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "ALL DLA’S must have a clear crosswalk between the ‘From’ and ‘To’ side of the",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "The following document types will NOT be processed:",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "DLA Submission Package Guidance",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "If any of the required supporting documentation is not included the entire DLA batch will be",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Documentation Retention Requirements",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "The Office Originating the DLA and AOD Must Retain the Following Documentation:",
+      "page": 3
+    }
+  ]
+}

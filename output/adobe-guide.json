@@ -18,16 +18,6 @@
     },
     {
       "level": "H2",
-      "text": "PDF as an intelligent, interactive experience—one that understands structure,",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "surfaces insights, and responds to you like a trusted research companion.",
-      "page": 2
-    },
-    {
-      "level": "H2",
       "text": "The Journey Ahead",
       "page": 2
     },
@@ -38,22 +28,7 @@
     },
     {
       "level": "H2",
-      "text": "context. You’re not just building tools — you’re building the future of how we",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "read, learn, and connect. No matter your background — ML hacker, UI builder,",
-      "page": 2
-    },
-    {
-      "level": "H2",
       "text": "Are you in?",
-      "page": 2
-    },
-    {
-      "level": "H2",
-      "text": "experience that feels like magic. Let’s go.",
       "page": 2
     },
     {
@@ -68,16 +43,6 @@
     },
     {
       "level": "H2",
-      "text": "outline of the document — essentially the Title, and headings like H1, H2, and",
-      "page": 3
-    },
-    {
-      "level": "H2",
-      "text": "H3 — in a clean, hierarchical format.",
-      "page": 3
-    },
-    {
-      "level": "H2",
       "text": "This outline will be the foundation for the rest of your hackathon journey.",
       "page": 3
     },
@@ -88,37 +53,12 @@
     },
     {
       "level": "H2",
-      "text": "generation.",
-      "page": 3
-    },
-    {
-      "level": "H2",
       "text": "What You Need to Build",
       "page": 3
     },
     {
-      "level": "H2",
+      "level": "H1",
       "text": "• Accepts a PDF file (up to 50 pages)",
-      "page": 3
-    },
-    {
-      "level": "H2",
-      "text": "{",
-      "page": 3
-    },
-    {
-      "level": "H2",
-      "text": "\"outline\": [",
-      "page": 3
-    },
-    {
-      "level": "H2",
-      "text": "]",
-      "page": 3
-    },
-    {
-      "level": "H2",
-      "text": "}",
       "page": 3
     },
     {
@@ -127,7 +67,7 @@
       "page": 3
     },
     {
-      "level": "H2",
+      "level": "H1",
       "text": "1. A sample input PDF (e.g., sample.pdf)",
       "page": 3
     },
@@ -143,16 +83,6 @@
     },
     {
       "level": "H2",
-      "text": "mysolutionname:somerandomidentifier```",
-      "page": 4
-    },
-    {
-      "level": "H2",
-      "text": "specified in the submitted instructions.",
-      "page": 4
-    },
-    {
-      "level": "H2",
       "text": "Constraints",
       "page": 4
     },
@@ -163,42 +93,12 @@
     },
     {
       "level": "H2",
-      "text": "Execution",
-      "page": 4
-    },
-    {
-      "level": "H2",
-      "text": "time",
-      "page": 4
-    },
-    {
-      "level": "H2",
-      "text": "No internet access",
-      "page": 5
-    },
-    {
-      "level": "H2",
       "text": "Scoring Criteria",
       "page": 5
     },
     {
       "level": "H1",
       "text": "Max",
-      "page": 5
-    },
-    {
-      "level": "H2",
-      "text": "Heading Detection Accuracy (Precision +",
-      "page": 5
-    },
-    {
-      "level": "H2",
-      "text": "Bonus: Multilingual Handling (e.g.,",
-      "page": 5
-    },
-    {
-      "level": "H2",
-      "text": "Total  45",
       "page": 5
     },
     {
@@ -248,11 +148,6 @@
     },
     {
       "level": "H2",
-      "text": "variety.",
-      "page": 7
-    },
-    {
-      "level": "H2",
       "text": "Sample Test Cases",
       "page": 7
     },
@@ -273,22 +168,7 @@
     },
     {
       "level": "H2",
-      "text": "• Must run on CPU only",
-      "page": 8
-    },
-    {
-      "level": "H2",
-      "text": "• Model size ≤ 1GB",
-      "page": 8
-    },
-    {
-      "level": "H2",
       "text": "Sample input/output for testing",
-      "page": 9
-    },
-    {
-      "level": "H3",
-      "text": "•",
       "page": 9
     },
     {

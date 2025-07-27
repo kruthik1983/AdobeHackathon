@@ -1,5 +1,5 @@
 {
-  "title": "Digital Library",
+  "title": "the Business Plan for the Ontario",
   "outline": [
     {
       "level": "H1",
@@ -12,6 +12,16 @@
       "page": 2
     },
     {
+      "level": "H1",
+      "text": "The purpose of this Request for Proposal (RFP) is to invite firms and/or consultants to",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Contracts with the firm/consultant will be signed the week of May 5, 2003 with the work to",
+      "page": 2
+    },
+    {
       "level": "H3",
       "text": "2",
       "page": 2
@@ -20,6 +30,26 @@
       "level": "H2",
       "text": "Background",
       "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "Equitable access for all Ontarians:",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "Shared decision-making and accountability:",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "Shared governance structure:",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "Shared funding:",
+      "page": 4
     },
     {
       "level": "H2",
@@ -72,13 +102,13 @@
       "page": 8
     },
     {
-      "level": "H3",
-      "text": "8",
-      "page": 8
+      "level": "H2",
+      "text": "Phase I:  Business Planning",
+      "page": 9
     },
     {
       "level": "H2",
-      "text": "Phase I:  Business Planning",
+      "text": "Timeline: March 2003 – September 2003",
       "page": 9
     },
     {
@@ -89,6 +119,11 @@
     {
       "level": "H2",
       "text": "Phase II: Implementing and Transitioning",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "Timeline: April 2004 – December 2006",
       "page": 9
     },
     {
@@ -107,14 +142,14 @@
       "page": 9
     },
     {
-      "level": "H3",
-      "text": "10101010",
-      "page": 10
+      "level": "H2",
+      "text": "Result: The ODL is fully operational and sustainable",
+      "page": 9
     },
     {
       "level": "H3",
-      "text": "1. Preamble",
-      "page": 11
+      "text": "10101010",
+      "page": 10
     },
     {
       "level": "H2",
@@ -153,12 +188,12 @@
     },
     {
       "level": "H2",
-      "text": "9. Financial and Administrative Policies",
-      "page": 13
+      "text": "8. Lines of Accountability and Communication",
+      "page": 12
     },
     {
-      "level": "H3",
-      "text": "13131313",
+      "level": "H2",
+      "text": "9. Financial and Administrative Policies",
       "page": 13
     },
     {

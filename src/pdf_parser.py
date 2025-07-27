@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+import fitz 
 import os
 
 def process_pdf(file_path: str):
@@ -11,7 +11,6 @@ def process_pdf(file_path: str):
         print(f"Processing '{os.path.basename(file_path)}' with {doc.page_count} pages.")
         
         all_pages_data = []
-        # The 50-page limit has been removed to process the entire document.
         for page_num, page in enumerate(doc):
 
             # 1. Find table areas to exclude them from text extraction
@@ -23,11 +22,10 @@ def process_pdf(file_path: str):
             # 3. Filter out any text blocks that fall within a detected table
             filtered_blocks = []
             for block in page_dict.get("blocks", []):
-                if block.get("type") == 0:  # Process only text blocks
-                    block_bbox = fitz.Rect(block["bbox"])
-                    is_in_table = any(block_bbox.intersects(table_bbox) for table_bbox in table_bboxes)
-                    if not is_in_table:
-                        filtered_blocks.append(block)
+                block_bbox = fitz.Rect(block["bbox"])
+                is_in_table = any(block_bbox.intersects(table_bbox) for table_bbox in table_bboxes)
+                if not is_in_table:
+                    filtered_blocks.append(block)
             
             # 4. Perform line merging within each remaining block
             for block in filtered_blocks:

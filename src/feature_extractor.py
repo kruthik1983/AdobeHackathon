@@ -29,7 +29,6 @@ def starts_with_numbering_or_bullet(text: str) -> bool:
         r"\(\d+\)|\[\d+\]|"   # (1), [1]
         r"([A-Z]\.|[a-z]\.)\s|" # A. or a. followed by a space
         r"[A-Z]\)|[a-z]\)|"      # A) or a)
-        # --- NEW: Added Roman numeral support ---
         r"(?:[IVXLCDM]+\.|[ivxlcdm]+\.)|" # I. or i.
         r"[０-９]+(\．[０-９]+)*|" # Full-width numbers for CJK
         r"[\u2022\u00B7\u2023\u25CF\u25E6\u25CB\u25D8\u25D9\u25BA\u25C4\u2043\u25AA\u25AC\u25C9\u2605\*—\-–+]" # Comprehensive bullet characters
@@ -63,7 +62,7 @@ def extract_features(pages_data):
     for page_idx, page in enumerate(pages_data):
         page_number = page["page_number"]
         page_width = page["page_rect"].width
-        page_height = page["page_rect"].height
+        page_height = page["page_rect"].height 
         
         prev_bbox_y1 = 0.0 
 

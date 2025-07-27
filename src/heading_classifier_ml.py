@@ -2,11 +2,13 @@ import pandas as pd
 import joblib
 import os
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, VotingClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction import DictVectorizer
-# --- CHANGE: Imported tools for model evaluation and hyperparameter tuning ---
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import accuracy_score
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
 
 MODEL_FEATURES = [
     'font_size', 
@@ -18,10 +20,6 @@ MODEL_FEATURES = [
 ]
 
 def train_and_save_model(csv_path: str, model_dir: str):
-    """
-    Loads the dataset, fine-tunes a RandomForest model using GridSearchCV to 
-    achieve higher accuracy, evaluates it, and saves the best model.
-    """
     print(f"Loading dataset from {csv_path}...")
     try:
         df = pd.read_csv(csv_path)
@@ -34,67 +32,74 @@ def train_and_save_model(csv_path: str, model_dir: str):
         if col not in df.columns:
             df[col] = 0
     df[MODEL_FEATURES] = df[MODEL_FEATURES].fillna(0)
-    
+    df = df.dropna(subset=['level'])
+
     X = df[MODEL_FEATURES].to_dict(orient='records')
     y = df['level']
 
     vectorizer = DictVectorizer(sparse=False)
     X_vec = vectorizer.fit_transform(X)
-    
-    # Split data into training and testing sets to evaluate accuracy properly
+
     X_train, X_test, y_train, y_test = train_test_split(X_vec, y, test_size=0.2, random_state=42, stratify=y)
 
-    # --- CHANGE: Define a grid of hyperparameters to search through ---
-    # This grid explores different combinations to find the most accurate model.
-    param_grid = {
-        'n_estimators': [100, 200, 300, 400, 500],
-        'max_depth': [None, 10, 20, 30, 40, 50],
-        'min_samples_split': [2, 5, 10, 15],
-        'min_samples_leaf': [1, 2, 4, 8],
-        'bootstrap': [True, False],
-        'criterion': ['gini', 'entropy']
-    }
+    # Define models and their grids
+    models_and_grids = [
+        (RandomForestClassifier(random_state=42, class_weight='balanced', n_jobs=-1), {
+            'n_estimators': [100, 200],
+            'max_depth': [None, 20, 40],
+            'min_samples_split': [2, 5],
+            'min_samples_leaf': [1, 2],
+            'bootstrap': [True, False],
+            'criterion': ['gini', 'entropy']
+        }),
+        (GradientBoostingClassifier(random_state=42), {
+            'n_estimators': [100, 200],
+            'learning_rate': [0.1, 0.05],
+            'max_depth': [3, 7]
+        }),
+        (make_pipeline(StandardScaler(), LogisticRegression(random_state=42, class_weight='balanced', max_iter=10000, solver='lbfgs')), {
+        'logisticregression__C': [1.0, 10.0]
+        }),
+    ]
 
-    rfc = RandomForestClassifier(random_state=42, class_weight='balanced', n_jobs=-1)
-
-    # --- CHANGE: Use GridSearchCV to find the best model ---
-    # It will test combinations from param_grid using 5-fold cross-validation.
+    best_models = []
+    best_scores = []
     print("Starting model fine-tuning with GridSearchCV... (This may take a few minutes)")
-    grid_search = GridSearchCV(estimator=rfc, param_grid=param_grid, cv=5, n_jobs=-1, verbose=2, scoring='accuracy')
-    grid_search.fit(X_train, y_train)
+    for model, grid in models_and_grids:
+        grid_search = GridSearchCV(model, grid, cv=3, n_jobs=-1, verbose=1, scoring='accuracy')
+        grid_search.fit(X_train, y_train)
+        best_model = grid_search.best_estimator_
+        y_pred = best_model.predict(X_test)
+        acc = accuracy_score(y_test, y_pred)
+        best_models.append(best_model)
+        best_scores.append(acc)
+        print(f"{type(best_model).__name__} best accuracy: {acc:.2%} | Params: {grid_search.best_params_}")
 
-    print("\n--- Fine-Tuning Results ---")
-    print(f"Best parameters found: {grid_search.best_params_}")
-    
-    # Get the best model from the search
-    best_model = grid_search.best_estimator_
+    # Consensus (majority vote) using VotingClassifier
+    estimators = [(f"model_{i}", m) for i, m in enumerate(best_models)]
+    voting_clf = VotingClassifier(estimators=estimators, voting='soft')
+    voting_clf.fit(X_train, y_train)
+    y_pred_consensus = voting_clf.predict(X_test)
+    consensus_acc = accuracy_score(y_test, y_pred_consensus)
+    print(f"\nConsensus (VotingClassifier) accuracy: {consensus_acc:.2%}")
 
-    # --- CHANGE: Evaluate the best model on the test set ---
-    y_pred = best_model.predict(X_test)
-    accuracy = accuracy_score(y_test, y_pred)
-    print(f"Accuracy on test set: {accuracy:.2%}")
-
-    if accuracy < 0.90:
-        print("NOTE: Target accuracy of 90% was not met. Consider expanding the dataset or adding more features.")
-
-    model_payload = {
-        'model': best_model,
-        'vectorizer': vectorizer,
-        'classes': best_model.classes_
-    }
-
+    # Save the best individual model and the consensus model
     os.makedirs(model_dir, exist_ok=True)
-    model_path = os.path.join(model_dir, 'pdf_heading_model.joblib')
-    joblib.dump(model_payload, model_path)
-    print(f"\nBest model successfully trained and saved to '{model_path}'")
+    # Save vectorizer and consensus model
+    joblib.dump({'vectorizer': vectorizer, 'model': voting_clf, 'classes': voting_clf.classes_}, os.path.join(model_dir, 'pdf_heading_model.joblib'))
+    print(f"\nConsensus model successfully trained and saved to '{os.path.join(model_dir, 'pdf_heading_model.joblib')}'")
 
+    # Optionally, save the best individual model too
+    best_idx = int(np.argmax(best_scores))
+    joblib.dump({'vectorizer': vectorizer, 'model': best_models[best_idx], 'classes': best_models[best_idx].classes_}, os.path.join(model_dir, 'pdf_heading_best_individual_model.joblib'))
+    print(f"Best individual model ({type(best_models[best_idx]).__name__}) saved to '{os.path.join(model_dir, 'pdf_heading_best_individual_model.joblib')}'")
 
 def classify_headings(feature_lines: list, model_dir: str):
     """
     Classifies text lines using the fine-tuned, pre-trained model.
     """
     if not feature_lines:
-        return "Untitled Document", []
+        return "", []
 
     model_path = os.path.join(model_dir, 'pdf_heading_model.joblib')
     
@@ -141,6 +146,8 @@ def classify_headings(feature_lines: list, model_dir: str):
                 "text": feature_lines[i]['text'].strip(),
                 "page": feature_lines[i]['page_number']
             })
+    
+
             
     return title, outline
 

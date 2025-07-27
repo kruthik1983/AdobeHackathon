@@ -15,7 +15,6 @@ def create_json_file(title: str, outline: list, input_filename: str, output_dir:
         "outline": outline
     }
 
-    # Ensure the output filename has a .json extension
     base_name_without_ext = os.path.splitext(input_filename)[0]
     output_path = os.path.join(output_dir, f"{base_name_without_ext}.json")
 
